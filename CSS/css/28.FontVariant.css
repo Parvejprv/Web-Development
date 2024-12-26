@@ -1,0 +1,15 @@
+/*  
+font-variant:- normal
+----------------
+- normal
+- small-caps
+*/
+
+
+p {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.57);
+  /* font-family: sans-serif; */
+
+  font-variant: small-caps;
+}

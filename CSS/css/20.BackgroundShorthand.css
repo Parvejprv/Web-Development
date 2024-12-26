@@ -1,0 +1,12 @@
+/* 
+background-shorthand
+=======================
+background: url(bimage.jpg) no-repeat center fixed;
+
+*/
+
+body {
+    background: url(../images/snapchat-wh.png) no-repeat center fixed;
+    /*it would cover all the screen*/
+    /* background-size: cover;      */
+} 

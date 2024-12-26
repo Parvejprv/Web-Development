@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>border-width</title>
+  <style>
+    
+    h1.heading {
+      color: red;
+    }
+
+    p {
+      color: rgba(0, 0, 0, 0.656);
+    }
+
+    p#first {
+      border: dashed;
+      font-size: 24px;
+      text-align: justify;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: bold;
+    }
+
+    p#second {
+      border: 5px solid rgba(0, 0, 0, 0.481);
+      padding: 10px;
+    }
+
+    p#third {
+      border: 5px solid;
+      border-color: aqua;
+      border-style: double;
+    }
+
+    p#fourth {
+      border: solid;
+      border-width: thick thin medium 10px;    /* top right bottom left */
+    }
+
+    p#fifth {
+      border-style: solid;
+      border-width: thick medium thin;      /* top left & right bottom */
+    }
+
+
+    p#sixth {
+      border-style: solid;
+      border-width: thick thin;   /* top & bottom  left & right */
+    }
+    
+
+  </style>
+</head>
+<body>
+  <h1 class="heading">Border width</h1>
+  <p id="first">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque repellat reprehenderit odio, enim debitis fuga, beatae tempora neque, excepturi quas consequuntur.
+    Tempore quod blanditiis, atque ipsa voluptatibus perspiciatis dolores deleniti aut quam deserunt sit illo accusamus repudiandae voluptas incidunt ex excepturi pariatur, quidem nihil! Rem facere repellendus dicta consequatur voluptates incidunt.
+  </p>
+  <p id="second">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque repellat reprehenderit odio, enim debitis fuga, beatae tempora neque, excepturi quas consequuntur. perspiciatis dolores deleniti aut quam deserunt sit illo accusamus repudiandae voluptas incidunt ex excepturi pariatur, quidem nihil! Rem facere repellendus dicta consequatur voluptates incidunt.
+  </p>
+  <p id="third">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque repellat reprehenderit odio, enim debitis fuga, beatae tempora neque, excepturi quas consequuntur.
+    Tempore quod blanditiis, atque ipsa voluptatibus perspiciatis dolores deleniti aut quam deserunt sit illo accusamus repudiandae voluptas incidunt ex excepturi pariatur, quidem nihil! Rem facere repellendus dicta consequatur voluptates incidunt.
+  </p>
+  <p id="fourth">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque repellat reprehenderit odio, enim debitis fuga, beatae tempora neque, excepturi quas consequuntur.
+    Tempore quod blanditiis, atque ipsa voluptatibus perspiciatis dolores deleniti aut quam deserunt sit illo accusamus repudiandae voluptas incidunt ex excepturi pariatur, quidem nihil! Rem facere repellendus dicta consequatur voluptates incidunt.
+  </p>
+  <p id="fifth">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque repellat reprehenderit odio, enim debitis fuga, beatae tempora neque, excepturi quas consequuntur.
+    Tempore quod blanditiis, atque ipsa voluptatibus perspiciatis dolores deleniti aut quam deserunt sit illo accusamus repudiandae voluptas incidunt ex excepturi pariatur, quidem nihil! Rem facere repellendus dicta consequatur voluptates incidunt.
+  </p>
+  <p id="sixth">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque repellat reprehenderit odio, enim debitis fuga, beatae tempora neque, excepturi quas consequuntur.
+    Tempore quod blanditiis, atque ipsa voluptatibus perspiciatis dolores deleniti aut quam deserunt sit illo accusamus repudiandae voluptas incidunt ex excepturi pariatur, quidem nihil! Rem facere repellendus dicta consequatur voluptates incidunt.
+  </p>
+</body>
+</html>

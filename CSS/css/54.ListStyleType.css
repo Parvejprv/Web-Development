@@ -1,0 +1,75 @@
+/*  
+list-style-type
+================
+It specifie the appearance of the list item maker if the list-style-image property has the value none or if the image specified through this property cannot be displayed.
+We can set this property to none, disc, circle, square, decimal, decimal-leading-zero, lower-roman, upper-roman, lower-alpha, upper-alpha, lower-greek, lower-latin, upper-latin,
+hebrew, armenian, georgian, cjk-ideographic, hiragana, katakana, hiragana-iroha, or katakana-iroha.
+
+Ex: -
+ul { list-style-type: circle; }
+
+
+
+list-style-type:none;
+=====================
+It specify the appearance of the list item maker if the list-style-image property has the value none or if the image specified through this property can not be displayed. We can set this property to none, disc, circle, square, decimal, decimal-leading-zero, lower-roman, upper-roman, lower-alpha, upper-alpha, lower-greek, lower-latin, upper-latin, hebrew, armenian, georgian, cjk, ideographic, hiragana, katkana, hiragana-iroha, or katkana-iroha.
+
+
+*/
+
+
+
+span.val {
+  color: red;
+}
+
+/* Select the element for the ordered list */
+div#orderedList .ordered ol#olList1 {
+  list-style-type: lower-alpha;
+}
+
+div#orderedList .ordered ol#olList2 {
+  list-style-type: upper-alpha;
+}
+
+div#orderedList .ordered ol#olList3 {
+  list-style-type: lower-roman;
+}
+
+div#orderedList .ordered ol#olList4 {
+  list-style-type: upper-roman;
+}
+
+div#orderedList .ordered ol#olList5 {
+  list-style-type: lower-latin;
+}
+
+div#orderedList .ordered ol#olList6 {
+  list-style-type: upper-latin;
+}
+
+div#orderedList .ordered ol#olList7 {
+  list-style-type: decimal;    
+}
+
+div#orderedList .ordered ol#olList8 {
+  list-style-type: decimal-leading-zero;    
+}
+
+
+/* Select the element for unordered list */
+div#unorderedList .unordered ul#ulList1 {
+  list-style-type: disc;    /* by default */
+}
+div#unorderedList .unordered ul#ulList2 {
+  list-style-type: circle;    
+}
+div#unorderedList .unordered ul#ulList3 {
+  list-style-type: square;   
+}
+div#unorderedList .unordered ul#ulList4 {
+  list-style-type:georgian ;   
+}
+div#unorderedList .unordered ul#ulList5 {
+  list-style-type: armenian;   
+}

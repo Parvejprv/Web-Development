@@ -1,0 +1,32 @@
+/* 
+text-shadow : it specifies the shadow effect added to text. We can add more than one shadow to the text, seperated by comma. 
+
+syntax:- 
+------------
+text-shadow : h-shadow v-shadow blur-radius color;
+
+
+*/
+
+
+
+h1, h2, h3 {
+  font-size: 2rem;
+  font-family: sans-serif;
+  color: blue;
+  text-align: center;
+}
+
+h1.first.heading {
+  font-size: 50px;
+  color: red;
+}
+
+h1 {
+  text-shadow: -2px -2px 2px blue;
+}
+
+h3 {
+  text-shadow: 2px 2px 5px rgba(226, 4, 4), 5px 5px 8px yellow;
+}
+

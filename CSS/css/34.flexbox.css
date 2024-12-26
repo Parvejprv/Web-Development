@@ -1,0 +1,30 @@
+/*  
+flexbox properties
+===================
+
+- display
+- flex-direction
+- justify-content
+- align-items
+- flex-wrap
+- align-content
+- flex-flow
+- order
+- align-self
+- flex
+
+
+*/
+
+#img1 {
+  float: left;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+p#loremText {
+  clear: left;
+  text-align: justify;
+}
+
+

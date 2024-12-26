@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>box-shadow in css</title>
+  <link rel="stylesheet" href="css/82.2.box-shadow_property.css">
+</head>
+<body>
+  <div class="heading">
+    <h2>box-shadow in CSS</h2>
+    <p>
+      <pre>
+box-shadow
+============
+This property is used to attach one or more shadows to an element.
+
+Syntax-
+
+box-shadow: h-shadow v-shadow blur-amount spread color inset;
+
+
+Note:- 
+--------
+h-shadow - The position of horizontal shadow. Negative values are allowed.
+v-shadow - The position of vertical shadow. Negative values are allowed.
+blur - It specify the blur amount
+spread - Size of shadow | spreading area. Negative values are allowed.
+color - It specify the color of the shadow
+none - No shadow, Default
+shadow-direction(inset | outset) - It specify the box-shadow direction means shadow should be inside or outside (default) of the box.
+
+Ex: 
+div { box-shadow: 2px 2px 5px red; }
+div { box-shadow: 2px 2px 5px red, 5px 5px 8px blue, 5px 5px 8px blue inset; }
+      </pre>
+    </p>
+  </div>
+  <div class="box">
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+  </div>
+</body>
+</html>

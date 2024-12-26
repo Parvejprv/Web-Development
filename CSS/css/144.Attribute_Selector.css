@@ -1,0 +1,31 @@
+/* 
+Attribute Selector
+===================
+Set Style using the attribute value containing a specified word.
+
+Syntax: - 
+[attribute ~= "value"] {
+  property: value;
+  property2: value2;
+  property3: value3;
+}
+
+Ex
+[class ~= "game] { color: red; }
+
+
+*/
+
+[class ~= "game"] {
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+

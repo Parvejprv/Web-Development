@@ -1,0 +1,47 @@
+/*  
+table-layout: auto;     // fixed
+===================================
+if we gives table-layout:fixed; then it gonna fixed its width with the same given layout.
+
+
+Ex:
+
+table {
+  width: 100%;
+  border-collapse: seperate;
+  table-layout: fixed;
+  border: 1px solid black;
+}
+
+.col-10 {
+    width: 10%;
+}
+.col-90 {
+    width: 90%;
+}
+
+
+But if we set this, table-layout: fixed; then it would automatically manage it.
+
+
+*/
+
+table {
+    border-collapse: separate;
+    width: 100%;
+    border: 1px solid black;
+    table-layout: fixed;        /* long word didn't get whole width so that got overlapped */
+    /* table-layout: auto;  */    /* auto, will covered the layout automatically */
+}
+
+td {
+    border: 1px solid black;
+}
+
+
+.col-10 {
+    width: 10%;
+}
+.col-90 {
+    width: 90%;
+}

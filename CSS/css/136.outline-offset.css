@@ -1,0 +1,32 @@
+/*  
+outline-offset
+===============
+This property is used to add space between an outline and the edge or border of an element.
+
+Ex:
+div {outline-offset: 5px;}
+
+*/
+
+
+div {
+  margin: 100px 200px;
+  display: flex;
+  justify-content: center;
+
+  outline: 10px dashed red;
+  outline-offset: 15px;
+  border: 5px dotted yellow;
+}
+
+div.box2 {
+  margin: 100px 200px;
+  display: flex;
+  justify-content: center;
+
+  outline: 10px dashed red;
+  outline-offset: 50px;
+  border: 5px dotted yellow;
+}
+
+

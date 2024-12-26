@@ -1,0 +1,78 @@
+/*  
+Outline
+========
+An outline is a line that is drawn around the elements, outside the borders. Outlines never take up space, as they are drawn outside of an element's content.
+
+  - outline-color
+  - outlie-style
+  - outline-width
+  - outline
+
+
+
+- outlie-style
+-----------------
+This property is used to specify the style of an outline. We can set this property to none(default), hidden, dotted, double, dashed, solid, groove, ridge, inset, outset.
+
+Ex
+div { outline-style: solid; }
+
+
+- outline-color
+----------------
+This property is used to specify the color of an outline. We can set this property to invert(default> or color.
+
+Ex:-
+div {outline-color: red;}
+
+
+- outline-width
+-----------------
+This property is used to specify the width of an outline. We can set this property value as medium(default), thin, thick, length (we can give value into px, percent(%), vw, vh, rem, em).
+
+Ex: - 
+div {outline-width: 20px;}
+
+- outline
+----------
+This is a shorthand of other outline properties.
+Syntax:- 
+Selector{outline: outline-color, outline-style, outline-width;}
+
+Ex
+div {outline: red solid 3px;}
+
+*/
+
+
+
+div {
+  margin: 100px 150px;
+  border: 1px solid red;
+  /* We can give the value of each property of outline, as- */
+  /* outline: solid; */
+  /* outline: double; */
+  /* outline: dashed; */
+  /* outline: dotted; */
+  /* outline: groove; */
+  /* outline: ridge; */
+
+  outline-color: blueviolet;
+  /* outline-width: 10px; */
+  /* outline-width: 1rem; */
+  /* outline-width: 10%; */
+  /* outline-width: 1.5vw; */
+  outline-width: thin;
+  outline-style: dashed;
+
+
+
+
+  /* we can give the property and value with the shorthand syntax of outline */
+  /* outline: 20px groove blue; */
+  
+  display: flex;
+  justify-content: center;
+}
+
+

@@ -1,0 +1,32 @@
+/*  
+MultipleBackgroundImage:- 
+--------------------------
+syntax:- 
+
+element_name {
+  background-image: url(geek.jpg), (geeks.jpg);
+  background-position : left top, right top;
+  background-size : 80px 60px;
+  background-repeat : no-repeat, no-repeat;
+*/
+
+
+/* body {
+  background-image: url(../images/black.board.jpg), url(../images/abstract.png);
+  background-position : left top, right top;
+  background-size: 180px, 200px;
+  background-repeat: no-repeat, no-repeat;
+} */
+body {
+  background: url(../images/abstract.png) left top no-repeat, url(../images/snapchat-wh.png) right top no-repeat ;
+}
+
+
+h1.heading {
+  color: aliceblue;
+  text-align: center;
+  background-color: rgb(0, 215, 215);
+  font-size: 2rem;
+  font-family: "rejouice headline";
+  font-weight: bold;
+}

@@ -1,0 +1,31 @@
+/*  
+There are three way of inserting an css with HTML documents:-
+================================================================
+1. External Style Sheet
+2. Internal | Embeded Style Sheet
+3. Inline Style Sheet
+
+
+
+1. External Style Sheet:-
+=============================
+- An external stylesheet has a seperate document that contains only CSS rules. 
+- An external stylesheet helps to change the look of an entire website by changing just one css file. It should not contain any HTML Tags. 
+- It has .css extension.HTML document for which document we want to link and apply, and if we want to change the css file the changes will be apply to all file where css is linked.
+
+
+2. Internal | Embeded Style Sheet:- 
+=====================================
+- Internal stylesheet is written inside the document itself but within a style tag.
+- It does not needed any external file and no need to link with the help of the link tag.
+
+
+
+3. Inline Style Sheet:- 
+==========================
+- This css is used in that HTML document's line where we want to apply.
+
+
+
+
+*/

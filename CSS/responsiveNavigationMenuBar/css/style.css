@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Glegoo', sans-serif, serif;
+}
+
+
+
+.container {
+  /* border: 5px solid rgb(255, 0, 0); */
+  height: 100%;
+  width: 100vw;
+}
+
+.navbar {
+  height: 80px;
+  position: sticky;
+  top: 0px;
+  background-color: rgb(132, 198, 255);
+  z-index: 1000; /* Ensure it's above other content */
+  width: 100%;
+}
+
+
+.navbar::after {
+  content: " ";
+  display: block;
+  clear: both;
+  /* * zoom:1; */
+}
+
+.navbar > .site-brand {
+  color: red;
+  font-size: 2.58rem;
+  font-weight: bold;
+  font-family : Verdana, Geneva, Tahoma, sans-serif,"Mochiy Pop One", system-ui, 'Glegoo';
+  text-shadow: 2px 3px 1px rgb(255, 255, 255), -2px -2px 2px rgb(0, 38, 255);
+}
+
+.navbar, .navbar-mob {
+  background-color: rgb(132, 198, 255);
+}
+
+.navbar > a {
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+  padding: 10px 10px 10px 50px;
+  float: left;
+}
+
+.navbar > ul {
+  list-style: none;
+  float: right;
+}
+
+.navbar > ul > li {
+  display: inline-block;
+  line-height: 80px;
+  padding: 0px 20px;
+}
+
+.navbar > ul > li > a,
+.navbar-mob > ul > li > a {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.navbar > ul:last-child {
+  padding-right: 100px;
+}
+
+/* navbar-mob */
+/* .navbar-mob {
+  
+} */
+
+.navbar-mob > ul {
+  list-style: none;
+}
+
+.navbar-mob > ul > li {
+  line-height: 30px;
+  padding: 0px 20px;
+}
+
+.navbar > ul > li:hover,
+.navbar-mob > ul > li:hover {
+  background-color: grey;
+  font-size: 18px;
+}
+.navbar > ul > li:active,
+.navbar-mob > ul > li:active {
+  background-color: rgb(255, 207, 75);
+  font-size: 18px;
+}
+
+.navbar-mob, 
+.hamburger-btn {
+  display: none;
+}
+
+.navbar-mob {
+  position: fixed;
+  width: 100%;
+  top: 70px;
+}
+
+#mob-menu {
+  display: none;
+}
+
+.hamburger-btn > .fa-times {
+  display: none;
+}
+
+.hamburger-btn > .fa-bars, .hamburger-btn > .fa-times {
+  position: absolute;
+  top: -50px;
+  right: 30px;
+  font-size: 1.5rem;
+}
+
+.fa-bars {
+  z-index: 1;
+}
+.fa-times {
+  z-index: 2;
+}
+
+
+
+/* For responsiveness */
+@media screen and (max-width : 700px) {
+  .navbar-mob, 
+  .hamburger-btn {
+    display: block;
+  }
+
+  .navbar > ul {
+    display: none;
+  }
+}
+
+
+
+/* Content section */
+.main-content {
+  padding-top: 80px;
+  width: 100%;
+  background-color: aliceblue;
+}
+
+.main-content > .hero-section {
+  height: 100%;
+  width: 100%;
+  /* background-color: blueviolet; */
+
+  /* alignment */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.hero-section img {
+  max-width: 100vw;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  object-position: top;
+  
+}
+
+.hero-section img.unicefImg {
+  filter: blur(8px);
+}
+
+
+.heroBlank {
+  height: 500px;
+  width: 100%;
+  background-color: aliceblue;
+}
+
+
+
+
+
+

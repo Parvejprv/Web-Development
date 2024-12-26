@@ -1,0 +1,18 @@
+/*  
+Universal style class starts with a dot operator followed by the class name.
+
+Syntax:- 
+<style>
+  .class_name {class definition}
+</style>
+
+*/
+
+.red {
+  color: rgb(216, 36, 189);
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+

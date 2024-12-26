@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/162.3.Grid-positioning.css">
+  <title>Grid positioning in CSS</title>
+</head>
+<body>
+
+  <h1>Lightning Minds : Grid Positioning in CSS</h1>
+
+  <div class="container">
+    <div class="item item1">First</div>
+    <div class="item item2">Second</div>
+    <div class="item item3">Third</div>
+    <div class="item item4">Fourth</div>
+    <div class="item item5">Fifth</div>
+    <div class="item item6">Sixth</div>
+  </div>
+
+  <div class="container2">
+    <div class="item cnt2-item1">cnt2 First</div>
+    <div class="item cnt2-item2">cnt2 Second</div>
+    <div class="item cnt2-item3">cnt2 Third</div>
+    <div class="item cnt2-item4">cnt2 Fourth</div>
+    <div class="item cnt2-item5">cnt2 Fifth</div>
+    <div class="item cnt2-item6">cnt2 Sixth</div>
+  </div>
+
+  <div>
+    <pre>
+      /*  
+      Grid positioning in CSS
+      ========================
+      grid-positioning is specify to position the grid-item.
+
+      properties-
+      -------------
+      - grid-row-start  - It specify from where row to be started.
+      - grid-row-end  - It specify from where row to be end.
+      - grid-column-start
+      - grid-column-end
+
+      - grid-row : rowStart / rowEnd;
+      - grid-column : columnStart / columnEnd;
+      - grid-area : rowStart / rowEnd / columnStart / columnEnd;
+
+
+
+
+
+
+
+
+      - grid-row : start/end;
+      Ex-
+      grid-row: 2 / 3;
+
+      - grid-column : start/end;
+      Ex-
+      grid-column: 3 / 4;
+
+      - grid-area : rowStart / rowEnd / columnStart / columnEnd;
+      Ex-
+      grid-area : 2 / 3 / 3 / 4;
+
+
+
+
+
+      */
+
+
+
+      .container {
+        background-color: #eee;
+        width: 700px;
+        margin: 50px 0 0 50px;
+
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100px 100px;
+
+        grid-gap: 25px 50px;
+
+      }
+
+      .item{
+        color: #fff;
+        font-size: 1.23vw;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 5px 0 0 10px;
+      }
+
+      .item1 {
+        background-color: red;
+        /**************************
+        grid-positioning - while positioning the grid items, we have to notice that from where our grid should be start and where it should be ends. 
+
+        Note: By giving the ending position of the grid-item it ensures that grid should be ends here only. so that while making it responsive it should be helpfful for us.
+        ***************************/
+        /* from where row should be start */
+        grid-row-start: 2;
+
+        /* from where row to be end */
+        grid-row-end: 3;
+
+        /* from where column should be start */
+        grid-column-start: 3;
+
+        /* from where column should be end */
+        grid-column-end: 4;
+
+      }
+      .item2 {
+        background-color: yellowgreen;
+      }
+      .item3 {
+        background-color: rgb(131, 0, 239);
+      }
+      .item4 {
+        background-color: rgb(249, 64, 156);
+      }
+      .item5 {
+        background-color: royalblue;
+      }
+      .item6 {
+        background-color: orange;
+      }
+
+
+      .container2 {
+        width: 700px;
+        background-color: #eee;
+
+        margin: 50px 0 0 50px;
+
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100px 100px;
+
+        grid-gap: 25px 50px;
+      }
+
+      .cnt2-item1 {
+        background-color: yellowgreen;
+      }
+      .cnt2-item2 {
+        background-color:  rgb(131, 0, 239);
+      }
+      .cnt2-item3 {
+        background-color: rgb(249, 64, 156);
+      }
+      .cnt2-item4 {
+        background-color: royalblue;
+      }
+      .cnt2-item5 {
+        background-color: orange;
+
+        /* grid row starts from */
+        grid-row-start: 1;
+        /* grid row ends at */
+        grid-row-end: 2;
+
+        /* grid column starts from */
+        grid-column-start: 1;
+        /* grid column ends at */
+        grid-column-end: 2;
+      }
+      .cnt2-item6 {
+        background-color: red;
+      }
+    </pre>
+  </div>
+  
+</body>
+</html>

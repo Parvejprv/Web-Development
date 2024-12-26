@@ -1,0 +1,38 @@
+/*  
+z-index:- 
+============
+z-index property is used to set the layer of elements. We can set this property to auto (default) and number. It works only with position property value : fixed, relative, absolute.
+
+The element which has higher number apear at the top.
+
+
+Note: - For Position, position default value is static.
+
+*/
+
+div {
+  height: 300px;
+  width: 400px;
+  background-color: red;
+  position: fixed;
+}
+
+img {
+  height: 200px;
+  width: 450px;
+  border: 5px solid blue;
+
+  position: relative;   /* Here property value, position: relative; works according to its ancestor (i.e. here <body>) */
+}
+
+h1 {
+  color: chartreuse;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-shadow: 5px 5px rgb(0, 0, 0);
+  padding-left: 100px;
+
+  position: relative;   /* Here property value, position: relative; works according to its ancestor (i.e. here <img>) */
+  top: 100px;
+  z-index: 4;
+}
+

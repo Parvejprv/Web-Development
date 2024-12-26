@@ -1,0 +1,22 @@
+/*  
+Id Selector:-
+---------------
+- Id selector is use to select a particular element|tag from the HTML document.
+- Id should be unique in the HTML Documnets.
+
+Rules for defining a Id Selector:-
+-----------------------------------
+- Must begin with a letter A-Z or a-z.
+- class name can not start with a number.
+- Must not contain any space characters.
+- Can be followed by: letter(A-Za-z), digits(0-9), hyphens("-"), and underscore("_")
+- In HTML, all values are case insensitive
+
+*/
+
+#geeks {
+  color: rgb(33, 21, 203);
+  font-size: 60px;
+  font-family: serif;
+  font-weight: bolder;
+}

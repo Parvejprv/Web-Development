@@ -1,0 +1,19 @@
+/* 
+border-spacing
+=================
+It is applied only when there is no border-collapse 
+*/
+
+table, th, td {
+  border: 2px solid rgb(0, 0, 0);
+  font-size: 1.25rem;
+  color: rgba(0, 0, 0, 0.737);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: .5rem;
+  text-align: center;
+}
+
+table, th {
+  /* border-collapse: collapse; */
+  border-spacing: 50px 10px;
+}

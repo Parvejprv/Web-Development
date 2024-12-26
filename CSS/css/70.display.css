@@ -1,0 +1,57 @@
+/*  
+display : inline | block;
+
+This property is used to define how an element should display. Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is block or inline.
+
+
+- inline
+- block
+- flex
+- inline-block
+- inline-flex
+- inline-table
+- list-item
+- run-in
+- table
+- table-row-group
+- table-caption
+- table-column-group
+- table-header-group
+- table-footer-group
+- table-cell
+- table-column
+- table-row
+- none
+
+
+
+Block-level elements:- 
+========================
+A Block level element always starts on a new line and takes up full width available.
+
+Ex: 
+<div>
+<h1>
+<p>
+
+
+Inline elements:- 
+======================
+An Inline element does not start on a new line and only takes up as much width as necessary.
+
+Ex:
+<span>
+<a>
+<img>
+
+*/
+
+p {
+  border: 2px solid black;
+}
+
+a {
+  border: 2px solid black;
+}
+
+

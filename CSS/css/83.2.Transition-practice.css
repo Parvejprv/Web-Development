@@ -1,0 +1,72 @@
+
+div {
+  height: 100px;
+  width: 150px;
+  color: white;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  background-color: navy;
+  text-align: center;line-height: 100px;
+  margin-top: 15px;
+}
+
+
+/* animation */
+@keyframes increaseWidth {
+  0%, 100% {width: 150px; background-color: navy;}
+  50% { width: 800px; background-color: red; }
+}
+
+
+/* pseudo-class */
+
+.box0:hover {
+  background-color: red;
+  /* transition: transition_value duration delay */
+  /* transition: ease-in 3s 0s; 
+  width: 800px; */
+
+  animation: increaseWidth 3s all 1s infinite;
+}
+.box1:hover {
+  background-color: red;
+  /* transition: transition_value duration delay */
+  /* transition: ease 3s 0s;    
+  width: 800px; */
+
+  animation: increaseWidth 3s linear 1s infinite;
+}
+.box2:hover {
+  background-color: red;
+  /* transition: transition_value duration delay */
+  /* transition: linear 3s 0s;
+  width: 800px; */
+
+  animation: increaseWidth 3s ease 1s infinite;
+}
+.box3:hover {
+  background-color: red;
+  /* transition: transition_value duration delay */
+  /* transition: ease-in 3s 0s;
+  width: 800px; */
+
+  animation: increaseWidth 3s ease-in 1s infinite;
+}
+.box4:hover {
+  background-color: red;
+  /* transition: transition_value duration delay */
+  /* transition: ease-out 3s 0s;    
+  width: 800px; */
+
+  animation: increaseWidth 3s ease-out 1s infinite;
+}
+.box5:hover {
+  background-color: red;
+  /* transition: transition_value duration delay */
+  /* transition: ease-in-out 3s 0s;    
+  width: 800px; */
+
+  animation: increaseWidth 3s ease-in-out 1s infinite;
+}
+

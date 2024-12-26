@@ -1,0 +1,26 @@
+/*  
+sibling selector:- 
+----------------------
+two or more than two element that is adjacent to eachother are called siblings.
+
+  <div id="main">
+    <p>This is main paragraph</p>
+    <h1>Main Heading h1</h1>
+    <p>This After is main paragraph</p>
+    <p>This is main paragraph</p>
+    <div>
+      <h1>Child Heading h1</h1>
+      <p>This is child para </p>
+    </div>
+    <h2>Child Heading h2</h2>
+  </div>
+
+*/
+
+#main h1 ~ p {
+  color: green;
+}
+
+
+
+

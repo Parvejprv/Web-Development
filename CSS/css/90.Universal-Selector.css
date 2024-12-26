@@ -1,0 +1,28 @@
+/* 
+
+Universal Selector in CSS 
+===========================
+
+*/
+
+
+*{
+  color: red;
+}
+
+/* 
+Note: it is similar to the body but only difference is that body would not work for anchor tag but universal selector works with body tag also.
+
+*/
+
+
+
+/* body {
+  color: red;
+} */
+
+
+
+
+
+

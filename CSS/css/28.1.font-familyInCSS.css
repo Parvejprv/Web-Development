@@ -1,0 +1,29 @@
+/*
+- font-family: property is used to specify a list of font names for the text contained inside an HTML element, using font-family property.
+    Ex- 
+    p { font-family: Arial, serif, "Times New Roman"; }
+
+
+    Note: Here we notice one thing that a font-family "Times New Roman" is in qoutation, but other two font-family are not in qoutation. Why?
+    Ans- If the name of a font-family is more than one word, it must be it quotaion marks. 
+
+    so that specify that this is a single font-family.
+
+
+- font-style: 
+
+*/
+
+
+
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blue;
+    font-size: 5vw;
+}
+
+
+p {
+    font-family: sans-serif, Arial, 'Arial Narrow';
+    font-size: 2vw;
+}

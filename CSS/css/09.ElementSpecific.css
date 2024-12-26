@@ -1,0 +1,26 @@
+/* 
+Element specific class:- 
+-------------------------
+Yha pe hum un specific elements ko, css apply karte hain jinpe hum apply karna chahate hain, like yha ki case mei hum jaha jaha paragraph mein class "red" hai unpe hee kewal css apply karna chahte hain. It means specific elements pe kewal hum apply karna chahte hain.
+
+
+
+An element specific class starts with the element name, followed by the class name followed by a dot operator, whic is followed by the class name.
+
+Syntax:- 
+<style>
+  element_name.class_name { property : value Or (class definition) }
+</style>
+
+
+
+
+*/
+
+p.red {
+  color: rgb(162, 235, 6);
+  font-size: 40px;
+  font-family: "rejouice headline", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+

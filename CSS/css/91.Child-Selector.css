@@ -1,0 +1,60 @@
+/*  
+Child Selector in CSS
+========================
+When we applies css to the child then it goes and only applies to it only.
+
+Note- It gonna apply to the only specific direct child of the parent.
+
+Syntax:-
+---------
+
+f_selector_name > c_selector_name {
+  property : value;
+}
+
+
+*/
+
+
+#main > p {
+  color: red;
+  font-size: 18px;
+}
+
+
+#main > h1 {
+  color: aqua;
+}
+
+/* #main .child p {
+  color: maroon;
+} */
+
+/* #main .child > p {
+  color: pink;
+} */
+/* #main .child > .para {
+  color: blue;
+} */
+/* #main .child .para {
+  color: rgb(255, 0, 179);
+} */
+/* #main .child p {
+  color: rgb(255, 0, 179);
+} */
+
+/* #main > .child > .para {
+  color: #ff00b3;
+} */
+#main > .child > p {
+  color: #ff00b3;
+}
+#main > .child > .heading {
+  color: #00ff04;
+  font-size: 31px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: navy;
+  text-align: center;
+  padding: 100px 20px;
+}
+

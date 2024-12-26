@@ -1,0 +1,33 @@
+/*  
+BackgroundAttachment:- 
+==========================
+background-attachment : scroll;
+
+
+
+*/
+
+
+body {
+  background-image: url(../images/nature.jpg);
+  background-color: rgba(129, 101, 251, 0.8);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* But here I want background should be fixed only text should be scrollable */
+  background-attachment: fixed;
+}
+
+h1.red {
+  color: whitesmoke;
+  font-size: 4rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  color: white;
+  font-size: 16px;
+  font-family: sans-serif;
+  text-align: justify;
+}

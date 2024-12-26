@@ -1,0 +1,59 @@
+/*  
+    Text Properties:- 
+    ==================
+    Text Properties provides various text formatting options.
+
+    - color
+    - direction
+    - text-align
+    - letter-spacing
+    - line-height
+    - text-decoration
+    - text-indent
+    - text-shadow
+    - text-transform : lowercase, uppercase, capitialize, none
+    - vertical-align
+    - white-space
+    - word-spacing
+
+
+    */
+
+    h1{
+      color: red;
+      font-size: 24px;
+      font-family: sans-serif;
+      text-align: center;
+      text-transform: capitalize;
+    }
+
+    h2 {
+      color: blue;
+      font-size: 24px;
+      text-align: center;
+      font-family: sans-serif;
+      text-transform: uppercase;
+      
+    }
+
+    h3 {
+      color: blue;
+      font-size: 24px;
+      text-align: center;
+      font-family: sans-serif;
+      text-transform: lowercase;
+    }
+    p.para {
+      /* text-indent: -120px; */
+      text-indent: 70px;
+    }
+
+    p.secondPara {
+      color: rgb(0, 0, 0);
+      font-size: 30px;
+      text-align: justify;
+      letter-spacing: 2px;
+      word-spacing: 3px;
+      text-decoration:dotted;
+    }
+    

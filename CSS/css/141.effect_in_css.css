@@ -1,0 +1,42 @@
+/*  
+filter effects in CSS
+=======================
+This property is used to specify the several effects such as- blurring and changing the intensity of the color of an element.
+
+properties
+------------
+backdrop-filter
+filter
+
+
+Functions
+----------
+- blur()
+- brightness()
+- contrast()
+- drop-shadow()
+- grayscale()
+- hue-rotate()
+- invert()
+- opacity()
+- saturate()
+- sepia
+
+*/
+
+
+
+
+
+
+
+
+img {
+  /* filter: blur(5px); */
+  /* filter: brightness(50%); */
+  /* filter: drop-shadow(2px 5px 8px red); */
+  /* filter: grayscale(80%); */
+  /* filter: hue-rotate(140deg); */
+  /* filter: invert(100%); */
+  opacity: 80%;
+}

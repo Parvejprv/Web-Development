@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/162.2.Grid-gap.css">
+  <title>grid-gap in CSS</title>
+</head>
+<body>
+
+  <h1>Grid gap in CSS </h1>
+
+  <div class="container">
+    <div class="item item1">First</div>
+    <div class="item item2">Second</div>
+    <div class="item item3">Third</div>
+    <div class="item item4">Fourth</div>
+    <div class="item item5">Fifth</div>
+    <div class="item item6">Sixth</div>
+  </div>
+  
+
+  <div>
+    <pre>
+    
+      CSS 
+      -----------
+      /*  
+      Grid-gap
+      =========
+      The gap between the grid item is known as grid-gap. this can be row-wise and column-wise both.
+
+      - If it comes across the row then it is known as row-gap, and if it comes across the column then it is known as column-gap.
+      
+
+
+      grid-gap properties
+      =====================
+      - grid-row-gap
+      - grid-column-gap
+      - grid-gap
+
+
+
+
+      - grid-row-gap
+      ------------------
+      If it comes across the row then it is known as row-gap.
+
+
+      - grid-column-gap
+      ------------------
+      If it comes across the column then it is known as column-gap.
+
+
+      - grid-gap
+      ------------
+
+
+
+
+      */
+
+
+
+      .container {
+        background-color: #eee;
+        width: 700px;
+        margin: 50px 0 0 50px;
+
+        display: grid;
+        /* grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 100px 100px 100px; */
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 100px 100px;
+
+        /* Let give the row-gap to the grid item */
+        /* grid-row-gap: 2px; */
+        /* grid-row-gap: 20px; */
+        /* grid-row-gap: 1vw; */
+        /* grid-row-gap: 10%; */
+
+        /* Let give the column-gap to the grid item */
+        /* grid-column-gap: 1vw; */
+
+
+        /* We can specify the given above these two property by just using the shorthand property grid-gap: gapValueOfRow gapValueOfColumn; */
+
+
+
+        grid-gap: 25px 50px;
+        /* grid-gap: 15px 20px; */
+        /* grid-gap: 1vw 1vw; */
+
+      }
+
+      .item{
+        color: #fff;
+        font-size: 1.23vw;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 5px 0 0 10px;
+      }
+
+      .item1 {
+        background-color: red;
+      }
+      .item2 {
+        background-color: yellowgreen;
+      }
+      .item3 {
+        background-color: rgb(131, 0, 239);
+      }
+      .item4 {
+        background-color: rgb(249, 64, 156);
+      }
+      .item5 {
+        background-color: royalblue;
+      }
+      .item6 {
+        background-color: orange;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+    </pre>
+  </div>
+
+</body>
+</html>

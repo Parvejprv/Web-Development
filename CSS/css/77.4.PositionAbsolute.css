@@ -1,0 +1,51 @@
+/*  
+position : absolute;
+======================
+When we set absolute position for an element, element is positioned to the nearest positioned ancestor. If there is no position ancestor then it follows the normal position accoding to the browser.
+
+Ex: -
+
+div {
+  width: 400px;
+  height: 200px;
+  background-color: aqua;
+  border: 3px solid red;
+
+  position: relative;
+}
+
+div.heading {
+  width: 300px;
+  height: 100px;
+  border: 3px solid yellow;
+
+  position: absolute;
+  top: 90px;
+  
+}
+
+
+Note: - It count from its parent position, and will be positioned from its parent positioned.
+
+
+*/
+
+
+div {
+  width: 400px;
+  height: 200px;
+  background-color: aqua;
+  border: 3px solid red;
+
+  position: relative;
+}
+
+div.heading {
+  width: 300px;
+  height: 100px;
+  border: 3px solid yellow;
+
+  position: absolute;
+  top: 90px;
+  
+}

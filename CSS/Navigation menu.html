@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test html</title>
+  <style>
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2vw;
+      background-color: #fff;
+    }
+    .logo h1 a {
+      text-decoration: none;
+      color: #000;
+    }
+    .nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 2vw;
+    }
+    .navbar .item {
+      position: relative;
+    }
+    .navbar .item a {
+      text-decoration: none;
+      padding: 1rem;
+      color: #333;
+      font-size: 1rem;
+      display: block;
+    }
+    .navbar .item a:hover {
+      color: #007BFF; /* Optional: Change text color on hover */
+    }
+
+    /* Blue line animation */
+    .navbar .item::before {
+      content: '';
+      position: absolute;
+      /* bottom: 0; */
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0.2vw;
+      background-color: #007BFF;
+      transition: width 0.4s ease-in-out;
+    }
+
+    .navbar .item:hover::before {
+      width: 100%;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1><a href="/index.html">SFDXian</a></h1>
+    </div>
+    <div class="nav">
+      <ul class="navbar">
+        <li class="item"><a href="/index.html"><i class="fa fa-home"></i> Home</a></li>
+        <li class="item"><a href="./sign-up.html"><i class="fa fa-user-plus"></i> Register</a></li>
+        <li class="item"><a href="#"><i class="fa fa-server"></i> Services</a></li>
+        <li class="item"><a href="#"><i class="fa fa-solid fa-address-book"></i> Courses</a></li>
+        <li class="item"><a href="#"><i class="fa fa-info-circle"></i> About</a></li>
+        <li class="item"><a href="#"><i class="fa fa-envelope"></i> Contact us</a></li>
+        <li class="item"><a href="#"><i class="fa fa-star"></i> Reviews</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+</body>
+</html>

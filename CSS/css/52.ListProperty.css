@@ -1,0 +1,28 @@
+/*  
+List
+========
+List property is used to create list. There are two types of lists"
+
+1). Ordered List
+2). Unordered List
+
+1). Ordered List - An Ordered list uses number or letters as the list item markers.
+2). Unordered List - An Unordered list uses bullets as the list item markers.
+
+    here are the four property name that use,
+    - list-style-type
+    - list-style-image
+    - list-style-position
+    - list-style
+
+
+
+    list-style-image: url('path');
+    -----------------
+    In this an image is used as the list item marker. We can set this property to none or web address of an image.
+
+    Ex: 
+    ul { list-style-image: url('book.png');
+*/
+
+/*  */

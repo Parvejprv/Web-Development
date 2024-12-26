@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: slategray;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    #logo {
+      padding: 1vw 5vw;
+      background-color: #DD3333;
+    }
+    #logo h2 {
+      list-style-type: none;
+    }
+    #logo h2  a {
+      color: #fff;
+      font-size: 2vw;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .navbar {
+      background-color: #333;
+    }
+    .navbar ul {
+      width: 40%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+    }
+    .navbar ul li {
+      width: 20%;
+      padding: .75vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background-color ease-out .3s;
+    }
+    .navbar ul li:hover {
+      background-color: #DD3333;
+    }
+    .navbar ul li:active {
+      background-color: #fff;
+      color: #333;
+    }
+    .navbar ul li a {
+      color: #fff;
+      font-weight: bold;
+      font-size: 1vw;
+      text-decoration: none;
+    }
+    .navbar ul li a:active {
+      color: #333;
+      font-weight: bold;
+    }
+    /* Header css ends! */
+
+    /* Hero section starts */
+    .hero {
+      margin: 2vw 4vw;
+      height: 100vh;
+      border-radius: 10px;
+      display: flex;
+      box-shadow: 0 4px 6px 8px rgba(0, 0, 0, 0.2);
+    }
+    .sidebar {
+      height: auto;
+      max-width: 20%;
+      overflow: auto;
+      padding: 1.5vw;
+      background-color: #444;
+      border-radius: 10px 0 0 10px;
+    }
+    .sidebar p {
+      font-size: 1vw;
+      color: #fff;
+      width: auto;
+      overflow: auto;
+      display: flex;
+      justify-content: center;
+    }
+    .hero-content {
+      height: 100%;
+      width: 65%;
+      padding: 1vw;
+      background: linear-gradient(45deg,  rgba(0, 60, 255, 0.531), rgba(0, 0, 0, 0.2));
+    }
+    .hero-content p {
+      color: #fff;
+      font-size: 1vw;
+      text-align: justify;
+    }
+    .hero-content-nav {
+      height: 100%;
+      width: 15%;
+      background-color: lightblue;
+      border-radius: 0 10px 10px 0;
+    }
+    .hero-content-nav ul {
+      display: flex;
+      flex-direction: column;
+      list-style-type: square;
+      padding: 1vw;
+      list-style-position: inside;
+    }
+    .hero-content-nav ul li {
+      padding: 0;
+      margin-top: 5px;
+    }
+    .hero-content-nav ul li a {
+      font-size: 1vw;
+      color: #000;
+      text-decoration: underline;
+    }
+    .hero-content-nav ul li a:hover {
+      color: orange;
+    }
+    .hero-content-nav ul li a:active {
+      color: red;
+    }
+
+    /* Hero section end here! */
+
+
+    /* Media Queries */
+    /* Small device (phone and 600px below) */
+    @media (max-width: 600px) {
+      #logo h2{
+        text-align: center;
+      }
+      #logo h2  a {
+        font-size: 4vw;
+      }
+      .navbar ul {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 3vw 0;
+      }
+      .navbar ul li {
+        width: 100%;
+      }
+      .navbar ul li a {
+        font-size: 2.5vw;
+      }
+      .hero {
+        flex-direction: column;
+        height: auto;
+        margin: 1vw;
+      }
+      .sidebar {
+        max-width: 100%;
+        border-radius: 10px 10px 0 0;
+        padding: 2vw;
+      }
+      .hero-content {
+        width: 100%;
+        padding: 2vw;
+      }
+      .hero-content-nav {
+        width: 100%;
+        padding: 2vw;
+        border-radius: 0 0 10px 10px;
+      }
+      .sidebar p,
+      .hero-content p,
+      .hero-content-nav ul li p {
+        font-size: 3vw;
+      }
+    }
+
+    /* Medium devices(tablets, 768px and below) */
+    @media (max-width: 768px) {
+      #logo h2 a {
+        font-size: 3vw;
+      }
+      .navbar ul li a {
+        font-size: 2vw;
+      }
+      .sidebar p,
+      .hero-content p,
+      .hero-content-nav ul li p {
+        font-size: 1.5vw;
+      }
+    }
+
+    /* Large devices (deskttops, 992px and below) */
+    @media (max-width: 992px) {
+      #logo h2 a {
+        font-size: 2.5vw;
+      }
+      .navbar ul li a {
+        font-size: 1.5vw;
+      }
+      
+    }
+    
+
+  </style>
+</head>
+<body>
+  <!-- Header starts -->
+  <header>
+    <div id="logo">
+      <h2><a href="#">Cipher2Code</a></h2>
+    </div>
+    <div class="navbar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- Header end here! -->
+
+  <!-- Hero section stars -->
+  <section>
+    <div class="hero">
+      <div class="sidebar">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quas nesciunt, quidem libero accusantium vitae voluptate. Aperiam voluptate libero maiores soluta possimus non cumque eaque numquam! Sequi expedita quasi fuga.
+          Doloribus nesciunt dolores voluptate. Distinctio, architecto adipisci officiis quo perferendis explicabo nostrum nulla vero debitis, deserunt excepturi, expedita dolor modi neque tempora fugit corrupti atque in iste reprehenderit cupiditate rem?
+          Aut obcaecati adipisci dignissimos cumque. Dolorum quae, voluptatibus, quasi, officia id explicabo tenetur ex voluptate similique nam alias inventore amet saepe ad eius incidunt dolores quisquam quibusdam numquam sunt doloribus!
+          Sed odio aspernatur amet voluptatum, minus vero fuga exercitationem obcaecati provident odit eum sapiente ab laboriosam alias modi natus hic repellat autem optio perferendis maxime. Beatae harum consequatur doloremque nihil.
+          Quia illo, vitae tempore facere ex maxime nemo. Obcaecati quibusdam dignissimos fugiat facere quam maxime, vitae quod porro neque in, dolorum asperiores optio blanditiis minus magnam cum recusandae cupiditate suscipit.
+          Repudiandae in nobis rem laudantium aut similique necessitatibus, debitis soluta illum est harum doloremque pariatur et totam quos cumque doloribus maiores blanditiis ab qui itaque neque incidunt maxime. Omnis, non.
+          Maxime doloremque, ipsum, quam obcaecati nobis at aperiam dolorem accusantium a vero cupiditate ab perferendis veritatis id neque pariatur in! Porro ratione numquam mollitia ab expedita suscipit voluptatum velit minima.
+          Accusamus, quod. Quisquam ea explicabo adipisci, sed facere, doloribus sit earum distinctio excepturi deleniti quia cum aspernatur minus! Fugit laborum totam eius ut reiciendis nesciunt nostrum doloremque nihil exercitationem odit!
+          Similique suscipit dolorem quos asperiores rerum consequatur sint beatae officia vitae omnis maxime minima temporibus odit voluptatibus cupiditate odio, modi quas exercitationem doloribus voluptate. Soluta excepturi quam rem ipsum consequuntur?
+          Sint perspiciatis eos ducimus ad architecto exercitationem quo suscipit odit deleniti dolores minus labore, atque, aperiam distinctio ullam cumque. Expedita repellat explicabo, id nemo reiciendis officiis impedit ipsam sapiente nostrum.
+          Vero animi ratione quos maxime dolorum adipisci laborum blanditiis molestiae sed enim veritatis, tempora dignissimos provident cumque error quisquam recusandae? Nesciunt, ut. Similique debitis fuga dolores dolor iusto obcaecati quia?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quas nesciunt, quidem libero accusantium vitae voluptate. Aperiam voluptate libero maiores soluta possimus non cumque eaque numquam! Sequi expedita quasi fuga.
+          Doloribus nesciunt dolores voluptate. Distinctio, architecto adipisci officiis quo perferendis explicabo nostrum nulla vero debitis, deserunt excepturi, expedita dolor modi neque tempora fugit corrupti atque in iste reprehenderit cupiditate rem?
+          Aut obcaecati adipisci dignissimos cumque. Dolorum quae, voluptatibus, quasi, officia id explicabo tenetur ex voluptate similique nam alias inventore amet saepe ad eius incidunt dolores quisquam quibusdam numquam sunt doloribus!
+          Sed odio aspernatur amet voluptatum, minus vero fuga exercitationem obcaecati provident odit eum sapiente ab laboriosam alias modi natus hic repellat autem optio perferendis maxime. Beatae harum consequatur doloremque nihil.
+          Quia illo, vitae tempore facere ex maxime nemo. Obcaecati quibusdam dignissimos fugiat facere quam maxime, vitae quod porro neque in, dolorum asperiores optio blanditiis minus magnam cum recusandae cupiditate suscipit.
+          Repudiandae in nobis rem laudantium aut similique necessitatibus, debitis soluta illum est harum doloremque pariatur et totam quos cumque doloribus maiores blanditiis ab qui itaque neque incidunt maxime. Omnis, non.
+          Maxime doloremque, ipsum, quam obcaecati nobis at aperiam dolorem accusantium a vero cupiditate ab perferendis veritatis id neque pariatur in! Porro ratione numquam mollitia ab expedita suscipit voluptatum velit minima.
+          Accusamus, quod. Quisquam ea explicabo adipisci, sed facere, doloribus sit earum distinctio excepturi deleniti quia cum aspernatur minus! Fugit laborum totam eius ut reiciendis nesciunt nostrum doloremque nihil exercitationem odit!
+          Similique suscipit dolorem quos asperiores rerum consequatur sint beatae officia vitae omnis maxime minima temporibus odit voluptatibus cupiditate odio, modi quas exercitationem doloribus voluptate. Soluta excepturi quam rem ipsum consequuntur?
+          Sint perspiciatis eos ducimus ad architecto exercitationem quo suscipit odit deleniti dolores minus labore, atque, aperiam distinctio ullam cumque. Expedita repellat explicabo, id nemo reiciendis officiis impedit ipsam sapiente nostrum.
+          Vero animi ratione quos maxime dolorum adipisci laborum blanditiis molestiae sed enim veritatis, tempora dignissimos provident cumque error quisquam recusandae? Nesciunt, ut. Similique debitis fuga dolores dolor iusto obcaecati quia?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quas nesciunt, quidem libero accusantium vitae voluptate. Aperiam voluptate libero maiores soluta possimus non cumque eaque numquam! Sequi expedita quasi fuga.
+          Doloribus nesciunt dolores voluptate. Distinctio, architecto adipisci officiis quo perferendis explicabo nostrum nulla vero debitis, deserunt excepturi, expedita dolor modi neque tempora fugit corrupti atque in iste reprehenderit cupiditate rem?
+          Aut obcaecati adipisci dignissimos cumque. Dolorum quae, voluptatibus, quasi, officia id explicabo tenetur ex voluptate similique nam alias inventore amet saepe ad eius incidunt dolores quisquam quibusdam numquam sunt doloribus!
+          Sed odio aspernatur amet voluptatum, minus vero fuga exercitationem obcaecati provident odit eum sapiente ab laboriosam alias modi natus hic repellat autem optio perferendis maxime. Beatae harum consequatur doloremque nihil.
+          Quia illo, vitae tempore facere ex maxime nemo. Obcaecati quibusdam dignissimos fugiat facere quam maxime, vitae quod porro neque in, dolorum asperiores optio blanditiis minus magnam cum recusandae cupiditate suscipit.
+          Repudiandae in nobis rem laudantium aut similique necessitatibus, debitis soluta illum est harum doloremque pariatur et totam quos cumque doloribus maiores blanditiis ab qui itaque neque incidunt maxime. Omnis, non.
+          Maxime doloremque, ipsum, quam obcaecati nobis at aperiam dolorem accusantium a vero cupiditate ab perferendis veritatis id neque pariatur in! Porro ratione numquam mollitia ab expedita suscipit voluptatum velit minima.
+          Accusamus, quod. Quisquam ea explicabo adipisci, sed facere, doloribus sit earum distinctio excepturi deleniti quia cum aspernatur minus! Fugit laborum totam eius ut reiciendis nesciunt nostrum doloremque nihil exercitationem odit!
+          Similique suscipit dolorem quos asperiores rerum consequatur sint beatae officia vitae omnis maxime minima temporibus odit voluptatibus cupiditate odio, modi quas exercitationem doloribus voluptate. Soluta excepturi quam rem ipsum consequuntur?
+          Sint perspiciatis eos ducimus ad architecto exercitationem quo suscipit odit deleniti dolores minus labore, atque, aperiam distinctio ullam cumque. Expedita repellat explicabo, id nemo reiciendis officiis impedit ipsam sapiente nostrum.
+          Vero animi ratione quos maxime dolorum adipisci laborum blanditiis molestiae sed enim veritatis, tempora dignissimos provident cumque error quisquam recusandae? Nesciunt, ut. Similique debitis fuga dolores dolor iusto obcaecati quia?
+        </p>
+      </div>
+      <div class="hero-content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quas nesciunt, quidem libero accusantium vitae voluptate. Aperiam voluptate libero maiores soluta possimus non cumque eaque numquam! Sequi expedita quasi fuga.
+          Doloribus nesciunt dolores voluptate. Distinctio, architecto adipisci officiis quo perferendis explicabo nostrum nulla vero debitis, deserunt excepturi, expedita dolor modi neque tempora fugit corrupti atque in iste reprehenderit cupiditate rem?
+          Aut obcaecati adipisci dignissimos cumque. Dolorum quae, voluptatibus, quasi, officia id explicabo tenetur ex voluptate similique nam alias inventore amet saepe ad eius incidunt dolores quisquam quibusdam numquam sunt doloribus!
+          Sed odio aspernatur amet voluptatum, minus vero fuga exercitationem obcaecati provident odit eum sapiente ab laboriosam alias modi natus hic repellat autem optio perferendis maxime. Beatae harum consequatur doloremque nihil.
+          Quia illo, vitae tempore facere ex maxime nemo. Obcaecati quibusdam dignissimos fugiat facere quam maxime, vitae quod porro neque in, dolorum asperiores optio blanditiis minus magnam cum recusandae cupiditate suscipit.
+          Repudiandae in nobis rem laudantium aut similique necessitatibus, debitis soluta illum est harum doloremque pariatur et totam quos cumque doloribus maiores blanditiis ab qui itaque neque incidunt maxime. Omnis, non.
+          Maxime doloremque, ipsum, quam obcaecati nobis at aperiam dolorem accusantium a vero cupiditate ab perferendis veritatis id neque pariatur in! Porro ratione numquam mollitia ab expedita suscipit voluptatum velit minima.
+          Accusamus, quod. Quisquam ea explicabo adipisci, sed facere, doloribus sit earum distinctio excepturi deleniti quia cum aspernatur minus! Fugit laborum totam eius ut reiciendis nesciunt nostrum doloremque nihil exercitationem odit!
+          Similique suscipit dolorem quos asperiores rerum consequatur sint beatae officia vitae omnis maxime minima temporibus odit voluptatibus cupiditate odio, modi quas exercitationem doloribus voluptate. Soluta excepturi quam rem ipsum consequuntur?
+          Sint perspiciatis eos ducimus ad architecto exercitationem quo suscipit odit deleniti dolores minus labore, atque, aperiam distinctio ullam cumque. Expedita repellat explicabo, id nemo reiciendis officiis impedit ipsam sapiente nostrum.
+          Vero animi ratione quos maxime dolorum adipisci laborum blanditiis molestiae sed enim veritatis, tempora dignissimos provident cumque error quisquam recusandae? Nesciunt, ut. Similique debitis fuga dolores dolor iusto obcaecati quia?
+        </p>
+      </div>
+      <div class="hero-content-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- Hero section end here! -->
+
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+/* 
+pseudo element
+===============
+
+content
+-----------
+It is used to generate content at run time dynamically with the ::before and ::after pseudo-elements, to insert generated content.
+
+
+Here is the certain value related to the content
+
+- normal
+- none
+- counter
+- attr(attribute)
+- string
+- open-quote
+- close-quote
+- no-open-quote
+- no-close-quote
+- url(url)
+
+
+
+
+
+
+
+
+
+
+::before { content: "Samrat Quotes:" }
+::after { content: "Samrat Quotes:" }
+
+
+*/
+
+
+p {
+  font-family: cursive;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+
+
+/* string */
+/* p::before {
+  content: "Samrat says that,";
+  font-size: 21px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p::after {
+  content: "This is the end ...!";
+  font-size: 16px;
+  color: red;
+  font-family: sans-serif;
+} */
+
+
+
+/* open-quote & close-quote - (to add the quote) */
+/* p::before {
+  content: open-quote;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: monospace;
+}
+
+p::after {
+  content: close-quote;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: monospace;
+} */
+
+
+
+
+/* no-open-quote & no-close-quote - (to remove the quote) */
+/* p::before {
+  content: no-open-quote;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: monospace;
+}
+
+p::after {
+  content: no-close-quote;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: monospace;
+} */
+
+
+
+/* url (this is used to show an icon of list or as a bullets point) */  
+/* p::before {
+  content: url(/images/list-icon.png);
+  font-family: monospace;
+} */
+
+/* p::after {
+  content: url("/images/list-icon.png");
+  font-family: monospace;
+  color: red;
+} */
+
+
+
+
+div {
+  counter-reset: paragraphCounter;
+}
+
+/* counter */
+p::before {
+  counter-increment: paragraphCounter;
+  content: counter(paragraphCounter) ". ";
+  font-family: monospace;
+}
+
+p:nth-child(even) {
+  background-color: rgb(182, 221, 255);
+}
+

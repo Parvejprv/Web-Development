@@ -1,0 +1,30 @@
+/*  
+Psuedo class
+============
+A psudeo class is used to define a special state of an element.
+
+Syntax
+--------
+selctor:pseudo-class {property:value;}
+
+*/
+
+div {
+  height: 400px;
+  width: 400px;
+  color: white;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  background-color: navy;
+  text-align: center;line-height: 400px;
+}
+
+/* pseudo-class */
+div:hover {
+  background-color: red;
+  transition: ease-in 5s 2s;    /* transition: transition_value duration delay */
+  width: 800px;
+}
+
+

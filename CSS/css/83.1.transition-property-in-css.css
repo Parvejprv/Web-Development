@@ -1,0 +1,144 @@
+
+/*  
+Transition
+============
+Transition is used to change property values from one value to another, over a given duration.
+The transition effect will start when the specified CSS property change value.
+
+How to use transition?
+ - CSS property you want to add an effect to
+ - Duration of the effect
+
+ Note- 
+ If the duration part is not specified, the transition will have no effect, because the default value is 0.
+
+
+  It has several properties-
+  - transition-timing-function
+  - transition-property
+  - transition-duration
+  - transition-delay
+  - transition
+
+
+
+ transition-property:
+ ---------------------
+ This property is used to specify the name of the CSS property the transition effect is for (the transition effect will start when the specified CSS property changes). Always specify the transition-duration property, otherwise the duration is 0, and the transition will have no effect.
+ We can set this property to none, all and property.
+
+
+ Ex: 
+ div { transition: all 2s; }
+
+
+ none - No property will get a transition effect
+ all - All property will get a transition effect. This is Default value.
+ property - Define a comma separated list of CSS property names the transition effect is for
+
+
+ transition duration
+ --------------------
+ This property is used to specify how many second or miliseconds a transtion effect takes to complete.
+ We can set this property to time in the form of seconds or miliseconds. The default value of this property is 0s which means there will be no effect.
+
+ Ex: 
+ div { transition-duration: 2s; }
+ div { transition-duration: 1000ms; }
+
+ transition-timing-function
+ ---------------------------
+ This property is used to specify the speed curve of the transition effect. This property allows a transition effect to change speed over its duration. We can set this property to ease, linear, ease-in, ease-in-out, step-start, step-end, steps(int, start or end), cubic-bazier(n,n,n,n).
+
+ Ex: 
+ div { transition-timing-function: ease-in; }
+
+ here is the each of the transition timing function in depth,
+
+ 1). ease - It specifies a transition effect with slow start, then fast, then end slowly (equivalent to cubic-bazier(0.25, 0.1, 0.25, 1). This i Default value.
+
+2). linear - It specifies a transition effect with the same speed from start to end (equivalent to cubic-bazier(0, 0, 1, 1)).
+
+3). ease-in - It specifies the transion effect wih a slow start (equivalent to cubic-bazier (0.42, 0, 1, 1).
+
+4). ease-out - It specifies the transition effect with a slow end (equivalent to cubic-bazier(0, 0, 0.58, 1)).
+
+5). ease-in-out - It specifies the transition effect with a slow start and end (equivalent to cubic-bazier(0.42, 0, 0.58, 1)).
+
+6). step-start - Equivalent to steps(1, start)
+7). step-end  - Equivalent to steps(1, end)
+
+8). steps(int start or end) - Specifies a stepping function, with two parameters. The first parameters specifies the number of intervals in the function. It must be a positive integer(greater than 0). The second parameter, which is optional, is either the value "start" or "end", and specifies the point at which the change of values occur within the interval. If the second parameter is ommited, it is given the value "end"
+
+
+9). cubic-bazier (n,n,n,n) - Define your own values in the cubic-bazier function. Possible values are values from 0 to 1.
+
+
+
+transition-delay
+-----------------
+This property is used to specify when the transition effect will start. We can set this property to time in the form of seconds or milliseconds.
+
+Ex:
+div { transition-delay: 2s; }
+div { transition-delay: 1000ms; }
+
+
+
+
+
+
+*/
+
+
+
+
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  align-items: center;
+  background-color: #f0f0f0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.box {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  color: white;
+  font-weight: bold;
+  border: 8px;
+  cursor: pointer;
+}
+
+.box.all {
+  transition: all 2s ;
+}
+.box.width {
+  transition: width 2s ;
+}
+.box.height {
+  transition: height 2s ;
+}
+.box.background {
+  transition: background-color 2s ;
+}
+.box.transform {
+  transition: transform 5s;
+}
+.box.opacity {
+  transition: opacity 2s;
+}
+
+.box:hover {
+  height: 200px;
+  width: 200px;
+  background-color: #FF5722;
+  transform: rotate(360deg);
+  opacity: 0.5;
+}

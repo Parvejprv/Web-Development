@@ -1,0 +1,21 @@
+/* 
+Short hand of font property:- 
+-------------------------------
+It defines a shorthand property for font-style, font-variant, font-weight, font-size, line-height, and font-family properties.
+
+- It should follows the given order related to the font shorthand syntax.
+
+syntax:-
+----------
+font: font-style, font-variant, font-weight, font-size, line-height, font-family properties.
+
+
+Note: here font-size and font family value are required.
+
+*/
+
+
+p {
+  font: bold 20px arial;
+}
+

@@ -1,0 +1,31 @@
+/*  
+background-size:cover;
+- contain 
+- cover
+
+- contain  : it scales the background image to be as large as possible.
+- cover : it scales the background image so that the content area is completely covered by the background image.
+
+*/
+
+body {
+  background-image: url(../images/nature.jpg);
+  background-color: blueviolet;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* background-size: cover; */
+  background-attachment: fixed;
+}
+
+div.content {
+  width: 100%;
+  background-color: rgba(134, 20, 166, 0.554);
+
+}
+
+p {
+  font-size: 16px;
+  font-family: sans-serif;
+  color: white;
+  text-align: justify;
+}

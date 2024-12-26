@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-size: 100px;
+}
+
+.outer {
+  background-color: aqua;
+  margin: auto 3vw;
+  padding: 2vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.outer p {
+  color: #DD3333;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 1200px) {
+  body {
+    background-color: lightblue;
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    background-color: lightcoral;
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    background-color: lightgreen;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: lightslategray;
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+

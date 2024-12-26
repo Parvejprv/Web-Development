@@ -1,0 +1,40 @@
+/* 
+background-clip : border-box;
+================================
+
+Value	Description:- 
+----------------------
+- border-box	Default value. The background is clipped to the border box, it include border also.
+- padding-box	The background is clipped to the padding box, it does not include border, it goes only padding area.
+- content-box	The background is clipped to the content box, it includes the content area only.
+
+- initial	Sets this property to its default value. Read about initial
+- inherit	Inherits this property from its parent element.
+
+*/
+
+p{
+  border: 5px dotted black;
+  padding: 40px;
+  background-color: lightskyblue;
+  /* background-clip: border-box; */
+  /* background-clip: padding-box; */
+  background-clip: content-box;
+}
+
+div.main {
+  border: 2px solid red;
+  padding: 40px;
+  /* background-color: aqua; */
+  background-clip: border-box;
+}
+
+/* here i am targeting the element that is content inside the main div */
+div.main .content {
+  background-color: blueviolet;
+  background-clip: padding-box;
+}
+
+div.main .content p {
+  font-family: "heading rejouice";
+}

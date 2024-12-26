@@ -1,0 +1,26 @@
+/*  
+Text Properties:- 
+==================
+Text Properties provides various text formatting options.
+
+- color
+- direction
+- text-align
+- letter-spacing
+- line-height
+- text-decoration
+- text-indent
+- text-shadow
+- text-transform
+- vertical-align
+- white-space
+- word-spacing
+
+
+*/
+
+h1 {
+  color: red;
+  text-align: center ;
+}
+

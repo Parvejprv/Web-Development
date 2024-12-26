@@ -1,0 +1,56 @@
+/*  
+position: static;
+======================
+When we set static position for an element then it is not positined in any special way, it is always positioned according to the normal flow of the page.
+left, right, top, bottom property would not work with static position. 
+
+OR
+
+When we set the position as a static then we can not positioned the element at a particular place like: top, left, right, bottom etc.
+
+
+
+Ex:-
+
+img {
+  height:300px;
+  width: 300px;
+  border: 2px solid black;
+  position: static;     // no other ways gonna work here to align left, right, top and bottom
+}
+
+
+
+*/
+
+
+
+img {
+  height: 300px;
+  width: 300px;
+  border: 2px solid red;
+  position: static;
+  /* Here position property value set as static so that this element deos not gonna placed or positioned at a particular place. */
+  /* left: 200px;
+  top: 500px; */
+}
+
+#outer {
+  background-color: green;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: static;
+  /* top: 500px;   We can not do this because position is static */
+}
+
+#main {
+  background-color: blueviolet;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

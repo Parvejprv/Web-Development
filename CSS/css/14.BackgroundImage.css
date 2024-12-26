@@ -1,0 +1,28 @@
+/*  
+background-image
+================
+It is used to set the background of an HTML element. By default , the background-image property repeats an imgae both horizontally and vertically so it covers the entire element. While setting the background image for an HTML element, we should also specify a background color that will be used if the image is not available. We can set this property to none or url of an image.
+
+syntax:- 
+----------
+element_name { background-image :  url(image/geek.png);}
+
+
+Example:- 
+body { background-image :  url(image/geek.png);}
+
+*/
+
+
+
+/* Here image size is less than default background, so that it gonna repeat the background */
+body {
+  background-image: url('../images/snapchat-wh.png');
+  background-color: lightblue;
+}
+
+
+
+/* body {
+  background-image: url('../images/field.png');
+} */

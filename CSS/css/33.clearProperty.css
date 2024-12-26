@@ -1,0 +1,59 @@
+/*  
+float: left
+=======
+
+- left
+- right
+- none (default)
+
+This property is used to specify that an element should be placed along its left or right of its container, where text and inline elements will wrap around it. We can set this property to left, right, none (default).
+
+Ex: float:left;
+
+*/
+
+
+
+/* image will gonna left */
+#img1 {
+  float: left;   
+  margin-right: 1rem;
+}
+
+/* If I want that remaining text will be shown below the img1 then we need to use a property clear left */
+/* p {
+  clear: left;
+} */
+
+
+
+/* image will gonna right */
+
+#img2 {
+  float: right; 
+  margin-left: 1rem;
+} 
+
+
+/* If I want that remaining text will be shown below the img1 then we need to use a property clear right */
+/* p {
+  clear: right;
+} */
+
+
+
+/* 
+Now, When to use the clear both ?
+-----------------------------------
+
+*/
+
+p {
+  clear: both;
+}
+
+
+
+
+
+

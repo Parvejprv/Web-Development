@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>border-style</title>
+  <style>
+    p {
+      /* border: solid ; */
+      /* border: double ; */
+      /* border: dashed ; */
+      /* border: dotted ; */
+      /* border: groove; */
+
+      /*
+      border : none;
+      - solid  
+      - double 
+      - dashed
+      - dotted
+      - groove 
+      */
+    }
+
+    /*
+    top right bottom left;
+     
+    p {
+      border-style: dotted solid double dashed;
+    }
+    
+    */
+
+
+    /* we can define all the four side border with different like - border-style: dotted solid double dashed;    (Here values, first - top, second - right, third - bottom, fourth - left ) || in clockwise direction */
+    p.envt {
+      border-style: dotted solid double dashed;
+    }
+
+
+    /*
+    Note: - 
+    1). We can give three value also here where, border-style: dotted solid dashed; , (here values defines, 1st - top, 2nd - right & left, 3rd - bottom)
+
+    Ex- 
+    p { dotted solid dashed }
+
+
+    2). We can also defines or give two values like, border-style: dotted solid;    (here values defines as: 1st - top & bottom, 2nd = left & right)
+    
+
+    3). Single value set all side same 
+    
+    Ex- p { 
+    border-style: solid;
+    border-width: 5px;
+    
+    }
+
+    */
+
+  </style>
+  <link rel="stylesheet" href="./css/56.BorderStyle.css">
+</head>
+<body>
+
+  <h1>border-style</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus porro perspiciatis temporibus reprehenderit aut, provident, iusto quaerat explicabo, inventore culpa blanditiis nesciunt molestiae et. Culpa quia minima atque voluptatibus sequi.
+    Voluptatem, soluta vero eos amet labore tempore quos totam delectus deleniti sit reiciendis aspernatur sapiente iste, neque excepturi voluptate consequuntur modi dolorum perspiciatis! Ut ea dolorem sequi natus reprehenderit iusto?
+    Incidunt esse harum magni perferendis repudiandae. Tenetur numquam fugiat ut distinctio, recusandae quaerat corrupti dolore placeat ex possimus rem provident consequuntur odit officiis dolorem rerum mollitia laboriosam veritatis voluptatum non!
+  </p>
+  <p class="envt">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas vero quae quaerat ut recusandae eius ad quisquam placeat tempora temporibus et rerum consequatur, fugit, hic dolorum earum fugiat dolor ratione.
+  </p>
+  
+</body>
+</html>

@@ -1,0 +1,110 @@
+/*  
+Media Query
+==============
+A media query consist of an optional media type and zero or more expressions that limit the style sheet's scope by using media features, such as width, height, and color.
+
+Syntax
+@media not|only mediatype and (expressions media features) {
+    CSS
+}
+
+Ex-
+@media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+// Or
+
+@media screen and (min-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+
+all - Used for all media type device
+print - Used for printer
+screen - Used for computer screens, tablets, smart-phones etc.
+speech - Used for screen readers that "reads" the page out loud
+
+Note:- If you use the not or only operators, you must have to specify an explicit media type. If we are not using the operators like not | only then it is optional to use mediatype.
+
+
+Let see some of the operators that is used inside the media query-
+
+- And
+ - @media (min-width: 800px) {CSS}
+ - @media (min-with: 800px) and (orientation: landscape) {CSS}
+ - @media screen (min-with: 800px) and (orientation: landscape) {CSS}
+
+- Or(Comma,)
+ - @media (min-width: 800px), (orientation: landscape) {CSS}
+
+- Not
+ - @media not all and (min-width: 800px) {CSS}
+ - @media not (all and (min-width: 800px)) {CSS}
+
+ - @media not screen and (color), print and (color) {CSS}
+ - media (not (screen and (color))), print and (color) {CSS}
+
+
+
+
+Media features
+===============
+- max-aspect-ratio - The maximum ratio between the width and the height of the display area
+- max-color - The maximum number of bits per color component for the output device
+- max-color-index - The maximum number of colors the device can display
+- max-device-aspect-ratio - The maximum ratio between the width and the height of the device
+- max-device-height - The maximum height of the device, such as computer screen
+- max-device-width - The maximum width of the device, such as computer screen
+- max-height - The maximum height
+- max-monochrome - The maximum number of bits per "color" on a monochrome (greyscale) device
+- max-resolution - The maximum resolution of the device, using dpi or dpcm maximum height of the display area, such as browser windows
+- scan - The scanning process of the output device
+- scripting - Is scripting (e.g. JavaScript) available? (added in Media Queries level 4)
+- max-width - The maximum width of the display area, such as a browser window
+- min-aspect-ration - The minimum ration between the width and the height of the display area.
+- min-color - The minimum number of bits per color component for the output device.
+- min-color-index - The minimum number of colors the device can display
+- min-device-aspect-ration - The minimum number of ratio between the width and height of the device
+- min-device-width - The minimum width of the device, such as computer screen
+- min-device-height - The minimum height of the device, such as computer screen
+- min-height - The minimum height of the display area, such as browser window
+- min monochrome - the minimum number of bits per "color" on a monochrome (greyscale) device
+- min-resolution - The minimum resolution of the device, using dpi or dpcm
+- min-width - The minimum width of the display area, such as browser window
+- monochorme - The number of bits per "color" on a monochrome (greyscale) device.
+- update-frequency - How quickly can the output device can modify the appearance of the content ( added in Media Queries level 4)
+- width - The viewport width
+- orientation - The orientation of the viewport (landscape or portrain mode)
+- overflow-block - How does the output device handle content that overflows the viewport along the block axis (added in media queries level 4)
+- overflow-inline - Can content that overflows the viewport along the inline axis be scrolled (added in media queries level 4)
+- pointer - Is the primary input mechanism a pointing device, and if so, how accurate is it?
+- resolution - The resolution of the output device, using dpi or dpcm
+
+
+
+
+*/
+
+body {
+  background-color: lightblue;
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+
+
+/* @media screen and (min-width: 768px) {
+  body {
+    background-color: lightgreen;
+  }
+} */
+
+

@@ -1,0 +1,64 @@
+/* 
+cursor-pointer
+---------------
+- default : The default cursor
+- auto : default. The browser sets a cursor
+- all-scoll : The cursor indicates that something can be scrolled in any direction
+- none : No cursor is rendered for the element
+- not-allowd : The cursor indicates that the request action can not be executed
+- text : The cursor indicates text that may be selected
+- URL : A comma seperated list of URLs to custom cursors. Always specify a generic cursor at the end of the list, in case none of the URL-defined cursors can be used.
+- row-resize : The cursor indicates that the row can be resized vertically
+- s-resize : The cursor indicates that an edge of a box is to be moved down (south)
+- se-resize : The cursor indicates that an edge of a box is to be moved down and right (south/east)
+- sw-resize : The cursor indicates that an edge of a box is to be moved down and left (south/west)
+- n-resize : The cursor indicates that an edge of a box is to be moved up (north)
+- ne-resize : The cursor indicates that an edge of a box is to be moved up and right (north/east)
+- nesw-resize : The cursor indicates bidirectional resize cursor
+- ns-resize : The cursor indicates bidirectional resize cursor
+- nw-resize : The cursor indicates that an edge of a box is to be moved up and left (north/west)
+- nwse-resize : The cursor indicates bidirectional resize cursor
+- copy : The cursor indicates something is to be copied
+- alias : The cursor indicates an alias of something is to be created
+- e-resize : The cursor indicates that an edge of a box is to be moved right (east)
+- pointer : The cursor is a pointer and indicates a link
+- progess : The cursor indicates that the program is busy(in progress)
+- zoom-out : The cursor indicates that something can be zoomed out
+- zoom-in : The cursor indicates that something can be zoomed in
+
+
+*/
+
+
+
+
+.button-section {
+  height: 200px;
+  background-color: #fff;
+  border: 2px solid black;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button {
+  border-radius: 5px;
+  border: none;
+}
+
+button#button1 {
+  padding: 15px 40px;
+  background-color: lightblue;
+  cursor: pointer;
+}
+button#button2 {
+  padding: 15px 40px;
+  background-color: greenyellow;
+  cursor: not-allowed;
+}
+button#button3 {
+  padding: 15px 40px;
+  background-color: orange;
+  cursor: default;
+}

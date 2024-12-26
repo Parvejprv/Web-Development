@@ -1,0 +1,24 @@
+/*  
+Adjacent Selector:- 
+------------------------
+Adjacent selector selects the element next to the selector
+
+Syntax-
+
+f_selector_name c_selector_name + (c+1)_selector_name {
+  property : value;
+}
+
+*/
+
+#main h1 + p {
+  color: red;
+}
+
+/* What if write opposite */
+#main p + h1 {
+  color: blue;
+}
+
+
+

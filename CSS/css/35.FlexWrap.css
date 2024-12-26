@@ -1,0 +1,83 @@
+/*  
+flexbox properties
+===================
+
+- display
+- flex-direction
+- justify-content
+- align-items
+- flex-wrap
+- align-content
+- flex-flow
+- order
+- align-self
+- flex
+
+
+*/
+
+
+/*  
+flex-wrap: no-wrap (default)
+
+
+This property is used to specify whether the flexible items should be wrap or not. If the elements are not flexible item, the flex-wrap property has no effect. We can set this property to no-wrap(default), wrap and wrap-reverse.
+
+Ex:- 
+div {
+flex-wrap : wrap;
+}
+
+nowrap - It specifies that the flexible items will not wrap
+wrap - It specifies that the flexible items will wrap if necessary
+
+
+*/
+
+.content {
+  background-color: aliceblue;
+  padding: 2rem;
+  box-shadow: 5px -5px 5px 0.1px rgba(0, 0, 0, 0.1), -5px -5px 5px 0.1px rgba(0, 0, 0, 0.1), 5px 5px 5px 0.1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 2rem;
+}
+
+#row1, #row2 {
+  /* border: 2px solid black; */
+  border-radius: 10px;
+  display: flex;
+  height: 300px;
+  background-color: aliceblue;
+  justify-content:space-around;
+}
+.dev {
+  text-align: center;
+  align-content: center;
+  padding: 20px;
+  margin: 10px;
+  height: 230px;
+  width: 180px;
+  /* border: 5px solid yellow; */
+}
+
+#firstDiv, #secondDiv, #thirdDiv, #fourthDiv, #fifthDiv, #sixthDiv, #seventhDiv {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 5px -5px 5px 0.1px rgba(0, 0, 0, 0.2), -5px -5px 5px 0.1px rgba(0, 0, 0, 0.2), 5px 5px 5px 0.1px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.imgStudent {
+  height: 130px;
+  background-color: rgb(244, 232, 255);
+  box-shadow: -5px 5px 5px 0.1px rgba(0, 0, 0, 0.156);
+  border-radius: 50%;
+  margin-bottom: .5rem;
+}
+.detailSection {
+  display: block;
+  height: 80px;
+  padding: 2px;
+  background-color: rgb(244, 232, 255);
+  box-shadow: 5px 5px 5px 0.1px rgba(0, 0, 0, 0.336);
+  border-radius: 5px;
+}

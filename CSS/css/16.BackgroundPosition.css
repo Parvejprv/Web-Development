@@ -1,0 +1,31 @@
+/* 
+background-position:
+
+left top
+left center
+left bottom
+right top
+right center
+right bottom
+center top
+center center
+center bottom
+
+
+*/
+
+body {
+  background-image: url('../images/snapchat-wh.png');
+  background-repeat: no-repeat;
+  /* background-position: left top; */    /* 0% 0% */
+  /* background-position: left center; */   /* 0% 50% */
+  /* background-position: left bottom; */   /* 0% 100% */
+  /* background-position: right top; */   /* 100% 0%; */
+  /* background-position: right center; */     /* 100% 50% */
+  /* background-position: right bottom; */    /* 100% 100% */
+  /* background-position: center top; */      /* 50% 0% */
+  /* background-position: center center; */   /* 50% 50% */
+  /* background-position: center bottom; */ /* 50% 100% */
+  background-position: 0% 50%;
+  
+}

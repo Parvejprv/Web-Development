@@ -1,0 +1,70 @@
+/* 
+column-rule
+============
+The column-rule shorthand CSS property sets the width, style, and color of line drawn between columns in a multi-column layout.
+
+
+here is the other properties related to the column-rule: 
+- column-rule-color
+- column-rule-width
+- column-rule-style
+
+
+- column-rule-style: none | solid | double | dashed | dotted | groove | inset | outset;
+- column-rule-color: red;
+- column-rule-width: 10px;
+
+// Or
+
+This property is used to specified as one, two, or three of the values listed below, in any order.
+
+<'column-rule-width'>
+Is a <length> or one of the three keywords, thin, medium, or thick. See border-width for details.
+
+<'column-rule-style'>
+See border-style for possible values and details.
+
+<'column-rule-color'>
+Is a <color> value.
+
+
+*/
+
+
+
+div {
+  columns: 3;
+  border: 5px groove black;
+  padding: 20px;
+  column-rule-style: dotted;
+  column-rule-width: 5px;
+  column-rule-color: red;
+}
+
+.box-2 {
+  /* display: flex; */
+  flex-direction: column;
+  border: 2px dashed orange;
+  columns: 3;
+  padding: 20px;
+  margin: 3vw;
+  column-rule-style: dashed;
+  column-rule-width: 5px;
+  column-rule-color: blue;
+}
+
+.box-2 h1 {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+}
+
+.box-2 .im1 {
+  border: 10px solid green;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+}
+

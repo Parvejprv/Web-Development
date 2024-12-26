@@ -1,0 +1,10 @@
+/*  
+font-stretch: condensed, expanded, semi-condensed, semi-expanded, extra-condensed, extra-expanded, ultra-expanded
+
+*/
+
+p {
+  font-stretch:extra-condensed;
+  color: rgba(0, 0, 0, 0.731);
+  font-size: 2rem;
+}

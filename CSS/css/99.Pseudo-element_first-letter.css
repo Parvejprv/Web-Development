@@ -1,0 +1,36 @@
+/*  
+Pseudo-element
+===============
+
+::first-letter
+
+This is user to add a style to the first letter of the specified selector (each).
+This can be use only with the block level elements.
+
+
+
+- background properties
+- font properties
+- padding properties
+- margin properties
+- color properties
+- border properties
+- line-height
+- text-transform
+- text-decoration
+- vertical-align (only if float is 'none')
+- float
+- clear
+
+
+
+*/
+
+
+p::first-letter {
+  color: red;
+}
+
+
+
+

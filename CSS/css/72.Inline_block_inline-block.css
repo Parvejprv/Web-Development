@@ -1,0 +1,51 @@
+/* 
+display : inline;
+
+- inline : When we set the property value as display inline, the element does not start on a new line
+
+- block : When we set this value, element always start on a new line and takes up the full width available(we can set width and height).
+
+- inline-block : It is combination of inline and block value. It does not start on a new line but we can set width and height.
+
+- none : The element will not be displayed at all (has no effect on layout).
+
+
+*/
+
+
+/* We can set the width and height to the block level element */
+/* p {
+  display: block;
+  width: 400px;
+} */
+
+
+/* We can not set the width related to the display property value as inline */
+/* p {
+  display: inline;
+  
+} */
+
+
+/* We can set the width and height to the display property having value as inline-block */
+/* p {
+  display: inline-block;
+  width: 400px;
+} */
+
+
+p {
+  /* display: inline-block;
+  width: 50%; */
+  /* display: block; */       /* we can set the width with these ex-width: 50%;*/
+  /* display: inline; */    /* we can not set the width for it*/
+  display: none;
+}
+
+
+p#first {
+  border: 2px solid red;
+}
+p#second {
+  border: 2px solid blue;
+}

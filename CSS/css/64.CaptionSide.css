@@ -1,0 +1,19 @@
+/* 
+caption-side:
+*/
+
+
+
+table, th, td {
+  border: 2px solid rgb(0, 0, 0);
+  font-size: 1.25rem;
+  color: rgba(0, 0, 0, 0.737);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: .5rem;
+  text-align: center;
+}
+
+caption {
+  /* caption-side: bottom; */
+  caption-side: top;    /* by default */
+}

@@ -1,0 +1,60 @@
+/*  
+Grouping selectotrs in css:- 
+----------------------------
+To group selectors , seperate each selector with a comma.
+
+h1 {
+  color : red;
+  font-size: 30px;
+}
+
+p {
+  color : red;
+  font-size: 30px;
+}
+
+h2 {
+  color : red;
+  font-size: 30px;
+}
+
+h3 {
+  color : red;
+  font-size: 30px;
+}
+
+*/
+
+/* Here all the selectors have same property-value, so that we will group them by comma seperated*/
+
+/* h1 {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+p {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+h2 {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+h3 {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+} */
+
+/* Here we are Grouping selectors */
+h1, p, h2, h3 {
+  color: red;
+  font-size: 25px;
+  font-family: sans-serif;
+}

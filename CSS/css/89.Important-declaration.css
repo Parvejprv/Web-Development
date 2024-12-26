@@ -1,0 +1,25 @@
+/*  
+
+important:- 
+=============
+to apply a property as important that means it should be applied on the particular property-value while making the property-value as !important(!). We need to use the exclamation mark with text important (!important) to apply the important to the property.
+
+
+*/
+
+
+#main .cl {
+  color: red;
+  background-color: yellow;
+  text-align: center;
+}
+
+p {
+  color: green !important;   /* important declaration */
+}
+
+
+
+
+
+

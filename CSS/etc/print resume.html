@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Print Resume | Parvej Alam </title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <style>
+    #resume {
+      width: 80%;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #000;
+    }
+    #printBtn {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    #printBtn:hover {
+      background-color: #0056b3;
+    }
+  </style> -->
+</head>
+<body>
+  <div id="resume">
+    <h1>John Doe</h1>
+    <p>Experienced Software Developer with expertise in web technologies.</p>
+    <p>Email: john.doe@example.com</p>
+    <p>Phone: 123-456-7890</p>
+  </div>
+  <button id="printBtn">Print Resume</button>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      let resume = document.getElementById('resume');
+      let printBtn = document.getElementById('printBtn');
+
+      printBtn.addEventListener('click', () => {
+        // save the current document body content
+        const originalContent = document.body.innerHTML;
+
+        // Replace the body content with the resume content
+        document.body.innerHTML = resume.innerHTML;
+
+        // Trigger the print dialog
+        window.print();
+
+        // Restore the original content
+        document.body.innerHTML = originalContent;
+
+        // Reattach the script to ensure the functionality is restored
+        location.reload(); // Reload the page to reinitialize JavaScript
+        
+      });
+    });
+  </script>
+
+</body>
+</html>

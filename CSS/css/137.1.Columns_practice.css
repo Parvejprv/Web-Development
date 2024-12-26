@@ -1,0 +1,12 @@
+/* 
+columns
+=========
+
+
+*/
+
+#outer {
+  columns: 200px 4;
+  background-color: yellow;
+}
+

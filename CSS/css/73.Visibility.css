@@ -1,0 +1,30 @@
+/*  
+visibility : visible;  (default)
+=================================
+This property is used to specify whether an element is visible or not. We can set the property to visible(default), hidden or collapse.
+
+- hidden : The element is invisible but not removed.
+
+
+*/
+
+/* p.p1 {
+
+} */
+
+p.p2 {
+  visibility: hidden;
+}
+
+p.p3 {
+  visibility: visible;    /* default */
+}
+
+table, th, td {
+  border: 2px solid black;
+}
+
+/* Now, I want that the second row having the value of name as anika should be gayab ho jaye */
+table tr.collpseCheck {
+  visibility: collapse;
+}

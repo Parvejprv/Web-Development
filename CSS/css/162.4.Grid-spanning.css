@@ -1,0 +1,112 @@
+/*  
+Grid Spanning in CSS
+==========================
+Grid spanning means increasing the grid-item area attached with another grid-item, It would be row wise and column wise both.
+
+
+
+
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "Glegoo", "Saira", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+
+
+.container {
+  margin: 0vw auto;
+  background-color: #eee;
+  width: 80%;
+  /* margin: 50px 0 0 50px; */
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: 100px 100px; */
+  grid-template-rows: repeat(10, 120px);
+
+  grid-gap: 20px 20px;
+
+  box-shadow: 0 4px 6px rgba(0 , 0, 0, 0.2);
+}
+
+.item{
+  color: #fff;
+  font-size: 1.23vw;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px 0 0 10px;
+}
+
+.item1 {
+  background-color: red;
+  /**************************
+   grid-positioning - while positioning the grid items, we have to notice that from where our grid should be start and where it should be ends. 
+
+   Note: By giving the ending position of the grid-item it ensures that grid should be ends here only. so that while making it responsive it should be helpfful for us.
+  ***************************/
+  /* from where row should be start */
+  /* grid-row-start: 2; */
+
+  /* from where row to be end */
+  /* grid-row-end: 3; */
+
+  /* from where column should be start */
+  /* grid-column-start: 3; */
+
+  /* from where column should be end */
+  /* grid-column-end: 4; */
+
+
+  /* Using the shorthand properties of these, grid-row-star & grid-row-end, grid-column-star & grid-column-end, */
+  /* grid-row: 2 / 3;
+  grid-column: 3 / 4; */
+
+  /* Using the another shorthand that gonna replace the above these two shorthand properties - grid-row-start, grid-column-start, grid-row-end, grid cll*/
+  grid-area: 2 / 3 / 3 / 4;
+
+
+  z-index: 1;
+  
+}
+.item2 {
+  background-color: yellowgreen;
+  /* grid-row: 2 / span 3; */
+  grid-row: 2 / span 10;
+}
+.item3 {
+  background-color: rgb(131, 0, 239);
+}
+.item4 {
+  background-color: rgb(249, 64, 156);
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;      /* overlapping */
+  /* grid-column: 2 / 3; */
+}
+.item5 {
+  background-color: royalblue;
+}
+.item6 {
+  /* grid-area: 1 / 1 / 2 / 2; */
+  /* grid-row: 1 / 2;
+  grid-column: 1 / 2; */
+
+  /* grid-area: 1 / 1 / 2 / 4; */
+  grid-area: 1 / 1 / 2 / 4;
+  background-color: orange;
+}
+
+
+
+
+
+

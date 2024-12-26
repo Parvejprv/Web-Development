@@ -1,0 +1,82 @@
+/*  
+position : relative;
+==========================
+- static
+- fixed
+- absolute
+- relative
+
+
+
+Note: if we set the position property then we can use the left, right, top, bottom to specify the place where we want to apply the 
+
+
+static : after setting the position value as static, we can not set the positioned place like : left, right, bottom, top.
+
+fixed : after setting the position property value as fixed; that element gonna fixed at the positioned place like : left, right, bottom, top. And we can set the positioned value here.
+
+relative : When we set relative position for an element, elements positioned to its normal flow.  And we can set the positioned value here.
+
+
+
+*/
+
+h1#google {
+  background-color: blueviolet;
+  height: 100px;
+  width: 350px;
+  font-size: 1.5rem;
+  font-family: monospace;
+  font-weight: bold;
+  padding: 50px;
+}
+
+h1.red {
+  position: relative;
+  top: 50px;
+}
+
+h1#google a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+h1#google a:hover {
+  color: rgb(255, 150, 21);
+  font-size: 1.6rem;
+}
+
+img#img1 {
+  border: 2px solid red;
+  box-shadow: 3px 3px 4px 2px rgba(0, 12, 17, 0.246);
+  position: static;
+  left: 50px;
+}
+
+img.img1 {
+  position: fixed;
+  height: 200px;
+  width: 200px;
+  right: 50px;
+  top: 50px;
+}
+table {
+  width: 100%;
+  text-align: center;
+  font-family: monospace;
+  font-size: 1rem;
+  /* Here if we are using the position as fixed that means we are setting the parent property as fixed so that would be fixed and would not be scrolable.  */
+  /* position: fixed; */
+  position: relative;
+}
+td {
+  position:relative;
+}
+th {
+  background-color: aquamarine;
+}
+
+table#table1, td, th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 0.5rem;
+}

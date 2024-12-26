@@ -1,0 +1,37 @@
+/*  
+list-style-position: inside or outside;
+====================
+It specifies the position of the list item maker. You can set this property to either inside or outside.
+
+Ex: -
+ul {
+    list-style-position: inside;
+}
+
+*/
+
+ul.unorderedList {
+    list-style-position: inside;
+}
+
+ul.unorderedList1 {
+    list-style-position: outside;
+}
+
+
+#example {
+    color: red;
+    font-size: 2vw;
+}
+
+.codeExample {
+    background-color: aliceblue;
+    padding: 2vw;
+    color: #333;
+    font-family:monospace;
+    font-size: 16px;
+}
+
+p label {
+    color: red;
+}

@@ -1,0 +1,24 @@
+/*  
+empty-cells : 
+================
+
+This property is used to set whether or not to display border and background on epty cells in a table. It will work only if the border-collapse is set to seperate. We can set this property to show (default) or hide.
+
+
+Ex:- 
+table {empty-cells: hide;}
+
+*/
+
+table, th, td {
+  border: 2px solid rgb(0, 0, 0);
+  font-size: 1.25rem;
+  color: rgba(0, 0, 0, 0.737);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: .5rem;
+  text-align: center;
+}
+
+table {
+  empty-cells: hide;    /* by default empty-cells: show; */
+}

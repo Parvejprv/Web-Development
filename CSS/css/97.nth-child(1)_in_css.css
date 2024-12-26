@@ -1,0 +1,39 @@
+
+/* 
+
+pseudo-class
+=============
+nth-child(1)
+
+*/
+
+/* 1st item of a li */
+/* li:nth-child(1) {
+  color: red;
+} */
+
+/* 5th and 8th item of li */
+/* li:nth-child(5), li:nth-child(8) {
+  color: red;
+} */
+
+
+/* even items of li */
+/* li:nth-child(even) {
+  color: blue;
+} */
+
+/* odd items of li */
+/* li:nth-child(odd) {
+  color: red;
+} */
+
+
+
+/* we can also use formula as 3n + 2 */
+li:nth-child(3n + 2) {
+  color: red;
+}
+
+
+

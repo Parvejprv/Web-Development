@@ -1,0 +1,18 @@
+
+
+/*  
+pseudo-class
+==============
+
+first-child, last-child
+
+*/
+
+p:first-child {
+  color: blue;
+}
+
+p:last-child {
+  color: red;
+}
+

@@ -1,0 +1,33 @@
+/* 
+position: static;
+====================
+When we set static position for an element then it is not positioned in any special way, it is always posioned according to the normal flow of the page.
+Note: - If position: static; it wouldn't work to position on any specific way like- left, right, top and bottom. (It means agar humne element mein positioned property ki value static set kar rakha hai toh, usko hum specific tarike se positioned nhi kar sakte, usme left, right, top, bottom nhi kaam karega.)
+
+
+left, right , top, bottom
+============================
+This above property value works with position.
+
+*/
+
+
+
+/* This wouldn't work */
+/* img {
+  position: static;
+  top: 200px;
+  left: 100px;
+} */
+
+
+
+img {
+  position: fixed;
+  /* left: 50px;
+  bottom: 200px; */
+
+  right: 50px;
+  top: 100px;
+  
+}

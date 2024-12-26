@@ -1,0 +1,53 @@
+/*  
+Selector priority:-
+=====================
+selector priority is in the given format, i.e. id has highest priority than class and class has highest priority than elements.
+
+
+
+- ID      (High)
+- class     (medium)
+- tag | elements      (low)
+
+
+*/
+
+/* Here we applied property color to the id of a div, so that child will inherit its property and color would be red. */
+#main {
+  color: red;
+}
+
+/* But, after applying the color: red; from #main div, we try to specify the color using an element that is paragraph p. And here if we apply color: green; and paragraph text would be green. */
+p {
+  color: green;
+}
+
+/* But we want to specify the paragraph with more efficient way | deeply targeted, so */
+/* #main p {
+  color: blue;
+} */
+
+
+/* Let define the another class inside the paragraph tag p inside #main div and try to target them with another property-value */
+.para {
+  color: aqua;
+}
+
+/* Let target the paragraph tag with the help of id also to compare them along with eachother  */
+#para {
+  color: orange;
+}
+
+
+
+
+/* 
+Note:-
+========
+Hence that is proved that the priority of an id is always highest than other these two i.e. class and element.
+*/
+
+
+
+
+

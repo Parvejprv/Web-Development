@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple style sheet and it priorities</title>
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="./css/04.MultipleStyleSheetAndItsPriorities.css">
+  <!-- Internal stylesheet -->
+  <style>
+    p {
+      color: blue;
+      font-size: 22px;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h1 {
+      color: rgb(0, 255, 51); 
+      font-size: 30px;
+      font-family:Verdana, Geneva, Tahoma, sans-serif; 
+      font-weight:bold;
+    }
+  </style>
+  <!-- <link rel="stylesheet" href="./css/04.MultipleStyleSheetAndItsPriorities.css"> -->
+  
+
+</head>
+<body>
+  
+  <h1> I am a heading</h1>
+  <!-- <h1 style="color: yellow; font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight:bold;"> I am a heading</h1> -->
+  <p>I am 1<sup>st</sup> paragraph</p>
+  <p>I am 2<sup>nd</sup> paragraph</p>
+  <p style="font-size: 20px; color:red;">I am 3<sup>rd</sup> paragraph</p>
+
+</body>
+</html>

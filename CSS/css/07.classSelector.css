@@ -1,0 +1,31 @@
+/*  
+
+Class selector in CSS:-
+--------------------------
+- class selector is used to style the classes that is present into the HTML document.
+- let suppose we want to apply the same css to the multiple HTML elements then we must use the class selector to select the element multiple.
+- class Selector are used where you want to apply a style either on some tag or acrsoss the several tags without reapeating the style rule in an HTML document. Using this method of creating styles, you can create styles in the form of style classes in an external style sheet or as an internal style sheet. The class attributes is used to apply style class in HTMl tag.
+
+
+Type of class Selector:- 
+-----------------------------
+1. Universal style class
+2. Element specific style class
+
+Rule:- 
+----------
+- className Must begin with a letter A-Z or a-z
+- A class name can not start with a number
+- Must not contain any while space character between the class name
+- Can be followed by: letters(A-Za-z), digits(0-9), hyphens("-"), and underscore("_")
+- In HTML, all values are case-insensitive
+
+*/
+
+/* class selector */
+.geeks {
+  color: aqua;
+  font-size: 32px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+}

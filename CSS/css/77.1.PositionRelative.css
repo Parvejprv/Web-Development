@@ -1,0 +1,97 @@
+/* 
+position : relative; 
+=======================
+When we set relative position for an element, elements positioned to its normal flow.
+
+Syntax:-
+---------
+selector_name {
+  position : relative;
+  top: 100px;
+  right: 0px;
+  border: 3px solid red;
+}
+
+
+
+position : static;
+=====================
+When we set the position property as static, then we can not place them at a particular place like top, right, left, bottom.
+
+Example:- 
+
+h1 {
+  position : static;
+  border: 5px solid red;
+}
+
+The given below code does not work-
+h1 {
+  position : static;
+  border: 5px solid red;
+  left: 50px;
+}
+
+
+position : absolute;
+====================
+When we set absolute position for an element, element is positioned to the nearest positioned ancestor. If there is no positioned ancestor then it follow the normal position according to browser.
+
+div {
+  position : relative;
+  width : 400px;
+  height : 200px;
+  border : 2px solid red;
+}
+
+div {
+  position : absolute;
+  top : 80px;
+  right : 0;
+  width : 200px;
+  height : 100px;
+  border : 3px solid red;
+}
+
+
+*/
+
+body {
+  font-family: monospace;
+}
+p {
+  font-size: 1em;
+}
+
+div.container {
+  background-color: red;
+  height: 200px;
+  width: 100%;
+  display: flex;
+  /* align-items : center;  - is used to align the items vertically center */
+  align-items: center;
+  /* justify-content : center;  - is used to justify the content horizontally center */
+  justify-content: center;
+}
+div.childContainer {
+  background-color: rgb(245, 156, 156);
+  height: 150px;
+  width: 200px;
+  display: flex;
+  text-align: center;
+  /* align-items : center;  - is used to align the items vertically center */
+  align-items: center;
+}
+
+/* Here div is the parent element of the h1 tag, but div (parent) element has the position as fixed so that child element also should be positioned as per its parent element. */
+/* div {
+  position: fixed;
+  width: 300px;
+  height: 200px;
+  background-color: aqua;
+} */
+
+/* h1 {
+  position: relative;
+  top: 50px;
+} */

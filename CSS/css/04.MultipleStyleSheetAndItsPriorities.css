@@ -1,0 +1,31 @@
+/*  
+Multiple Style sheet and it priorities:-
+=========================================
+1st priority:-
+================
+Inline - It has the higher priorities than other two (external and internal) style sheet.
+
+2nd Priority:- 
+================
+There is a rule while defining the priority of the stylesheet between 'internal' and 'external'.
+
+- If the internal style is defined after the link to the external stylesheet then Internal style has highest priority.
+- for remaing which (internal | external) has been written below that may apply to the document that has heigher priority.
+
+(Jo niche likha hota hai usski priority jyada hoti hai)
+
+*/
+
+p {
+  color: #3391e3;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+h1 {
+  color: red; 
+  font-size: 35px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif; 
+  font-weight:bold;
+}

@@ -1,0 +1,27 @@
+/* 
+overflow : 
+
+======================
+
+*/
+
+p {
+  height: 200px;
+  width: 400px;
+  border: 2px solid red;
+
+  /* Now apply here overflow property value as hidden ( so the remaining overflow content got hide.) */
+  /* overflow: hidden; */
+
+  /* Now apply here overflow property value as scroll ( so the remaining and all content would be as scrollable.) */
+  /* overflow: scroll; */
+
+  /* overflow property has a default value as "visible", so that the remaining item would be visible at the time of overflow. */
+  /* overflow: visible; */
+
+  /* overflow: auto;  - it means the remaining overflow content would be scrollable  */
+  overflow: auto;
+
+
+
+}

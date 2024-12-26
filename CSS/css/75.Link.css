@@ -1,0 +1,47 @@
+/* 
+Link
+==========
+- a:link  ->  a normal unvisited link
+- a:visited   ->  a link the user has visited
+- a:hover     ->  a link when the mouse over it
+- a:active    ->  a link the moment it is clicked
+
+
+Ex:- 
+a:link {
+color : red;
+}
+
+
+Note: -
+a:hover MUST come after a:link and a:visited
+
+
+*/
+
+
+
+/* p.p2 a:link {
+  color: aqua;
+} */
+
+p.p2 a:visited {
+  color: rgb(172, 111, 229);
+  font-weight: bold;
+}
+
+
+
+
+p#ytube a:link {
+  color: red;
+}
+p#ytube a:visited {
+  color: aqua;
+}
+p#ytube a:hover {
+  color: yellow;
+}
+p#ytube a:active {
+  color: chartreuse;
+}

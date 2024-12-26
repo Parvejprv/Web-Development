@@ -1,0 +1,30 @@
+/*  
+What is the difference between 'display:none;' and 'visibility:hidden;' 
+=====================================================
+- display : none; 
+=================
+It is used to remove that particular element in which it is used. and also remove the width of that element from the html document.
+
+- visibility : hidden;
+=======================
+It is used to hide that particular element in which it is used. but it does not remove the width of that element from the html document.
+
+
+
+
+Note: 
+jab hum display: none; use karte hain toh element gayab ho jata hai aur apne assign space ko bhi permanentaly remove kar jata hai, But whi jab hum visibility: hidden; use karte hain toh element toh gayab ho jata hai but isme spaces bani rehti hai means unvisible rehta hai.
+
+*/
+
+p.p1 {
+  display: none;
+}
+
+p.p2 {
+  display: block;
+}
+
+p.p3 {
+  visibility: hidden;
+}

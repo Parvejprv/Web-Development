@@ -1,0 +1,75 @@
+/*  
+CSS is used to style the web page and make it more stylish and effective for the HTML Document.
+
+Syntax:-
+-----------
+selectorName {
+  property: value;
+  property2: value2;
+  property3: value3;
+  property4: value4;
+  ..
+  .
+}
+
+OR (We can write it into the single line also)
+
+selectorName {property:value; property:value; property:value; property:value; property:value; property:value;...}
+
+
+
+
+Selector - 
+-------------
+The Selector is used to points to the HTML element or HTML tag that you want to style. It is used to find or select HTML elements based on their elements name, id, class attributes, and more.
+
+Property -
+------------
+It indicates that these properties are defined for that element or selector.
+
+Property-Value - 
+-----------------
+These are values assigned to Properties.
+
+
+
+Syntax:-
+------------
+Selector { Property1: Property-Value1; Property2: Property-Value2; Property3: Property-Value3; Property4: Property-Value4; Property5: Property-Value5; .....}
+
+
+OR
+
+Selector { 
+Property1: Property-Value1; 
+Property2: Property-Value2; 
+Property3: Property-Value3; 
+Property4: Property-Value4; 
+Property5: Property-Value5; 
+.....
+}
+
+
+
+
+
+For example,
+................
+If we are using some tags like- h1, p etc. this might be the selector here.
+
+
+Example:
+.............
+
+p{color : red; font-size : 22px;}
+
+OR
+
+p {
+  color : red;
+  font-size : 22px;
+}
+
+
+
+*/

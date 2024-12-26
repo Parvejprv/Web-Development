@@ -1,0 +1,41 @@
+/*  
+position : fixed;
+====================
+When we set position for an element it always statys in the same place even if the page is scrollable. The top, right, bottom, left are used to position the element.   
+
+
+*/
+
+
+
+img {
+  height: 300px;
+  width: 300px;
+  border: 2px solid red;
+  position: fixed;
+  /* Here position property value set as fixed so that here we can position the element this element gonna placed or positioned at a particular place. */
+  right: 40px;
+  top: 50px;
+}
+
+#outer {
+  background-color: green;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+}
+
+#main {
+  background-color: blueviolet;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}

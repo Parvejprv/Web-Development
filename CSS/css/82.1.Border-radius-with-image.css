@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 100px auto;
+  background-color: antiquewhite;
+}
+
+.im1 {
+  height: 400px;
+  width: 400px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.im1:hover {
+  background-color: aliceblue;
+  width: 400px;
+  border-radius: 50%;
+}

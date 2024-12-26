@@ -1,0 +1,22 @@
+
+
+/*  
+pseudo-class
+==============
+
+first-child, last-child
+
+*/
+
+div p:first-of-type {
+  color: magenta;
+}
+
+div p:last-of-type {
+  color: yellow;
+}
+
+/* body p:last-of-type {
+  color: green;
+} */
+

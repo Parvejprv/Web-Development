@@ -1,0 +1,23 @@
+/*  
+bcakground-repeat :-
+=======================
+repeat
+repeat- - to repeat horizontally
+repeat-y - to repeat vertically
+no-repeat;   - no need to repeat 
+
+
+*/
+
+
+body {
+  background-image: url(../images/snapchat-wh.png);
+  background-color: aquamarine;
+  background-repeat: no-repeat;     /* no background will be repeated */
+}
+
+/* we can give the image to an particular element or tag */
+h1 {
+  text-align: center;
+  background-image: url(../images/black.board.jpg);
+}

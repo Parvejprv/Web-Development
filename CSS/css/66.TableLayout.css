@@ -1,0 +1,44 @@
+/* 
+table-layout : auto;
+======================
+- fixed
+*/
+
+body {
+  background-color: aliceblue;
+}
+
+table {
+  width: 100%;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  table-layout: auto;   /* fixed */
+  background-color: rgb(255, 255, 255);
+  empty-cells: hide;
+}
+
+th {
+  background-color: rgb(0, 200, 255);
+  font-size: 1.25rem;
+  color: rgba(0, 0, 0, 0.785);
+  padding: .4rem;
+}
+
+td, th {
+  border: 1px solid black;
+}
+
+/* td, th {
+  border: 1px solid black;
+} */
+
+caption {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+}

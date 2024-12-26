@@ -1,0 +1,78 @@
+/*  
+CSS grid
+==========
+- Two dimensional grid system
+- CSS grid layout replace the float layout
+- fast & clean code
+- No need of CSs frameworks
+
+
+CSS Grid properties: - 
+------------------------
+- grid-template-rows
+- grid-template-columns
+- grid-template-area
+- grid-template
+
+- grid-row-gap
+- grid-column-gap
+- grid-gap
+
+- justify-items
+- align-items
+- justify-content
+- align-content
+
+- grid-auto-rows
+- grid-auto-columns
+- grid-auto-flow
+
+- grid-row-start
+- grid-row-end
+- grid-row
+- grid-column-start
+- grid-column-end
+- grid-column
+- grid-area
+
+- justify-self
+- align-self
+- order
+
+
+
+grid-container
+-----------------
+grid-container can be specify as the parent div having the property as- display: grid; on parent.
+
+grid-items
+----------- 
+Items that are placed inside the grid-container are refers as the grid items.
+
+
+grid-cell - It is an individual container|div that is placed into the grid-container
+
+grid-lines - Lines between the grid column is known as grid lines.
+Note:- grid lines would be horizontally and vertically both.
+
+
+gutters - The gap|spaces between the grid lines and grid-cells, gutters can be horizontally and vertically both.
+
+grid-rows - rows inside the grid-container is known as the grid-rows
+
+grid-area - The gap between the grid-rows and grid-column is known as grid-area.
+
+
+
+
+
+
+
+*/
+
+
+
+
+
+
+

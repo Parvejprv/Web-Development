@@ -1,0 +1,21 @@
+/*  
+font-style: normal, italic, oblique
+
+*/
+
+h1 {
+  font-style: oblique;
+  font-size: 7rem;
+  text-align: center;
+  text-shadow: 5px 5px 4px rgb(23, 159, 222);
+}
+
+p {
+  color: rgba(0, 0, 0, 0.682);
+  font-size: 2rem;
+  font-style: italic;
+  text-shadow: 2px 0px 1px rgb(23, 159, 222);
+  font-weight: bold;
+  text-align: justify;
+  /* padding: 20px; */
+}

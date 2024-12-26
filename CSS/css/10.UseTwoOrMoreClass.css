@@ -1,0 +1,22 @@
+/*  
+Use Two or more classes:- 
+--------------------------
+Let suppose we want to use the n number of classes in the cascading style sheets, then we may use it definitely.
+
+
+*/
+
+/************ Element specific selector css ************/
+    /* apply the css, with class red */
+    p.red {
+      color: #FF0000;
+      font-size: 2rem;
+      font-family: sans-serif;
+    }
+    /* Now, let suppose we have n number of classes and want to apply the font-size property to the paragraph where a paragraph and class name look */
+    p.look {font-size: 60px;}
+
+    .algn { text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+
+

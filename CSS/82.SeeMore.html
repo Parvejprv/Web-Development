@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>See more</title>
+  <style>
+    #hidden-paragraph {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <p id="initial-paragraph">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos accusamus magnam doloremque a perspiciatis, debitis architecto alias quaerat! Maiores accusantium, quas tempora accusamus atque nisi dolorum ut! Aperiam, blanditiis esse!
+    Accusamus vero blanditiis rem perspiciatis, soluta corrupti quae quasi consequuntur sapiente nam doloremque nesciunt inventore a animi cupiditate esse expedita error cum tempore aliquam nulla est iste dolore. Quod, consequatur!
+  </p>
+  <button id="show-more-button">Show More</button>
+  <p id="hidden-paragraph" style="display: none;">
+    Quae cum molestias sequi accusamus maxime rem maiores minus, quasi esse atque velit mollitia omnis ipsam deserunt veniam dolore minima et obcaecati repellendus est natus labore nostrum distinctio. Error, temporibus!
+        Eos ut sequi voluptate dolore eum? Dolorum, animi tenetur fugit ea quod atque nulla explicabo commodi! Reprehenderit maiores odit laboriosam accusamus aliquam illo praesentium dolores eveniet ullam. Nesciunt, odit consequuntur.
+  </p>
+  
+
+
+  <script>
+    const showMoreButton = document.getElementById('show-more-button');
+    const hiddenParagraph = document.getElementById('hidden-paragraph');
+
+    showMoreButton.addEventListener('click', () => {
+      hiddenParagraph.style.display = 'block';    // Show the hidden paragraph
+
+      showMoreButton.style.display = 'none';    // Hide the button after revealing the text
+    });
+
+  </script>
+</body>
+</html>
