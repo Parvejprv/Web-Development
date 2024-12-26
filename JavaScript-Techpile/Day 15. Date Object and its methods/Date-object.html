@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Date object</title>
+</head>
+<body>
+  <!-- Let suppose we want to build the date in proper format -->
+
+
+  <script>
+    var d = new Date();
+    const date = d.getDate();
+    const month = (d.getMonth()+1);
+    const year = d.getFullYear();
+    const hour = d.getHours();
+    const minute = (d.getMinutes());
+    const second = d.getSeconds();
+    console.log("Date: "+ date);
+    console.log("Month : ", month);
+    console.log("Year: ", year);
+
+    console.log(`${date}-${month}-${year}`);
+    console.log(`${hour}-${minute}-${second}`);
+
+  </script>
+
+</body>
+</html>

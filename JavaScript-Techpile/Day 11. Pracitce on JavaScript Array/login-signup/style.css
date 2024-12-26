@@ -1,0 +1,105 @@
+/* *{
+  margin: 0;
+  padding: 0;
+  
+} */
+ 
+body {
+  background-color: aliceblue;
+  font-family: 'Times New Roman', serif;
+}
+
+#outer {
+  /* width: 320px; */
+  width: 15vw;
+  /* background: linear-gradient(45deg, #ffffff, #8FADAD); */
+  background: linear-gradient(45deg, red, orange);
+  margin: 100px auto;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+#header {
+  display: flex;
+  height: 45px;
+  width: 100%;
+  margin: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-weight: 600;
+}
+
+.box1 {
+  flex: 1;
+  text-align: center;
+  line-height: 45px;
+  background-color: black;
+  border-radius: 10px 0px 0px 0px;
+  color: #fff;
+}
+.box2 {
+  flex: 1;
+  text-align: center;
+  line-height: 45px;
+  background-color: black;
+  border-radius: 0px 10px 0px 0px;
+  color: #fff;
+}
+.box1:hover, .box2:hover {
+  background-color: white;
+  color: black;
+}
+
+.form-container {
+  display: none;
+  margin-top: 10px;
+}
+
+
+
+#login {
+  display: block;     /* Default visible section */
+}
+#register {
+  display: none;     /* Default visible section */
+}
+
+h2 {
+  text-align: center;
+}
+
+.form-section {
+  margin: 10px 0;
+}
+
+.form-section input {
+  width: 100%;
+  height: 35px;
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+#login-btn, #register-btn {
+  width: 104%;
+  height: 40px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s color 0.3s;
+}
+
+#login-btn:hover, #register-btn:hover {
+  background-color: white;
+  color: black;
+}

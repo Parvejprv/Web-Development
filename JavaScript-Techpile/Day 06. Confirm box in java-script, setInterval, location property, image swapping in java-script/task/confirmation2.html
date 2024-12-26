@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>redirection with the help of location property in js</title>
+  <style>
+    .link1 {
+      text-align: center;
+      color: #333;
+      font-size: 1.23vw;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: rgb(255, 80, 208);
+    }
+
+    #img-link {
+      height: 400px;
+      background-color: aqua;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 2vw;
+      margin-top: 2vw;
+    }
+
+    #img-link #img1 {
+      height: 300px;
+      width: 254px;
+      border: 2px solid black;
+    }
+
+    button {
+      font-size: 1.23vw;
+      margin-bottom: 1vw;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div class="link1">
+    <p>
+      Click the below given button to open the "Google" link.
+    </p>
+    <button onclick="confirmRedirect('https://www.google.com')" target="_blank">CLICK ME</button>
+  </div>
+
+  <div class="link1">
+    <p>
+      Click the below given button to open the "Instagram" link.
+    </p>
+    <button onclick="confirmRedirect('https://www.instagram.com')" target="_blank">CLICK ME</button>
+  </div>
+
+  <div id="img-link">
+    <p>Click on the image so that image got change with another image</p>
+    <img src="./portfolio/parvejalam img pas.jpg" alt="profile image" id="img1" onclick="changeImg()" />
+    <!-- <img src="./images/Wavy_Tech-21.jpg" alt="profile image" id="img1" onclick="changeImg()" /> -->
+  </div>
+
+  <script>
+    function confirmRedirect(url) {
+      if(confirm("Do you want to visit this website?")) {
+        // window.location = url;    // gonna open the website in same tab
+        window.open(url, '-blank');
+      }
+    }
+
+    function changeImg() {
+      // let get the src of the image
+      let img1 = document.getElementById('img1');   // object
+      let img1Src = img1.src;   // to get the source of img1
+     
+      console.log(img1Src);
+      // set the another img
+      img1.src = './images/Wavy_Tech-21.jpg';
+      console.log("img got changed");
+    }
+
+  </script>
+</body>
+</html>

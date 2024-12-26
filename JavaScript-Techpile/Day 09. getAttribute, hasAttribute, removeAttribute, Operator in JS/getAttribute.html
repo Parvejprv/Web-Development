@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>getAttribute()</title>
+
+  <style>
+    img {
+      height: 400px;
+      width: 400px;
+      border: 5px solid red;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <img class="img" id="im" src="/images/x1.jpg" alt="x1" onclick="demo()"/>
+
+  <script>
+    let demo = () => {
+      let imgObj = document.querySelector('img');   // object of the img
+
+      // getAttribute
+      let imgAttVal = imgObj.getAttribute('src');
+
+      // setAttribute
+      let anotherImgVal = imgAttVal = imgObj.setAttribute('src', '/images/x3.jpg');
+
+
+      // Adding new class
+      imgObj.classList.add('newClass');
+
+      // let select this newClass
+      let newClass = document.querySelector('.newClass');
+
+      newClass.style.border = "20px solid aqua";
+      newClass.style.height = "405px";
+      newClass.style.width = "405px";
+      newClass.style.boxShadow = "10px 10px 10px 10px green";
+      // console.log("newClass added: ", newClass);
+
+      // remove the newClass
+      newClass.classList.remove('.newClass');
+
+    }
+  </script>
+</body>
+</html>

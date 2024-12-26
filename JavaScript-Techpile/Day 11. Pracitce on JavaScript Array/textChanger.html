@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Changer</title>
+<style>
+
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+  }
+
+  .img-slider {
+    height: 100vh;
+    width: 100%;
+    background-color: aliceblue;
+  }
+
+  #img-slider {
+    height: 100%;
+    width: 100%;
+    /* border: 10px groove aqua; */
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  #skill {
+    color: red;
+    font-weight: 700;
+  }
+
+  #profile-title {
+    margin-top: 11vw;
+    height: 8vw;
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #profile-title h1 {
+    font-size: 7vw;
+    font-family: "rejouice headline";
+    font-weight: bold;
+  }
+
+  #skill-heading {
+    height: 150px;
+  }
+
+  #skill-heading-left {
+    height: 100%;
+    width: 45%;
+    float: left;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+  #skill-heading-left h1 {
+    font-size: 3.4vw;
+    padding-right: 18px;
+  }
+
+  #skill-heading-right {
+    height: 100%;
+    width: 55%;
+    float: left;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  #skill-heading-right span {
+    font-size: 3.54vw;
+  }
+
+
+</style>
+
+</head>
+<body>
+
+  <center>
+    <h1>TEXT CHANGER</h1>
+    <div class="img-slider">
+      <div id="img-slider">
+        <div id="profile-title">
+          <h1>Hi! I'm Parvej Alam</h1> 
+        </div>
+        <div id="skill-heading">
+          <div id="skill-heading-left">
+            <h1>I am a</h1>
+          </div>
+          <div id="skill-heading-right">
+            <span class="h2" id="skill">Skills</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </center>
+
+
+
+
+  <script>
+    var arr = ["Software Developer", "Web Developer", "Content creator", "Tutor", "Salesforce Developer", "Story Letter"];
+    var colors = ["red", "magenta", "black", "blue", "purple", "yellow"];
+
+
+    var i = 0;
+    function slider() {
+
+        let h2Obj = document.querySelector("span");
+        let imgSlider = document.querySelector("#img-slider");
+        let spanSkills = document.querySelector("#skill");
+
+        let h2Text = h2Obj.innerText = arr[i];
+        h2Obj.style.fontSize = "3.5vw";
+        h2Obj.style.color = "red";
+
+
+        //imgSlider.style.border = "10px groove " + colors[i]
+
+        
+
+        // console.log(img1Src);
+        i++;
+        if(i === arr.length) 
+        i = 0;
+    }
+
+    setInterval(slider, 2000);   // runs each time of each of the 2s
+
+
+
+  </script>
+</body>
+</html>

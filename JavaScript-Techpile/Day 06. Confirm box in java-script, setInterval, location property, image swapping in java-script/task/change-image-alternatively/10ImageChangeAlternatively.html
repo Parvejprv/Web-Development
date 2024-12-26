@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10 images should be change change alternatively</title>
+  <style>
+    .main {
+      height: 500px;
+      background-color: aliceblue;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    img {
+      height: 200px;
+      width: 200px;
+      border: 10px groove aqua;
+      padding: 10px;
+      border-radius: 10px;
+      margin-left: 20px;
+    }
+
+    .main h2 {
+      font-family:monospace;
+    }
+
+    .btn-section {
+      height: 4vw;
+      background-color: darkcyan;
+      text-align: center;
+      display: flex;
+    }
+
+    .btn-section .swap-btn {
+      height: 4vw;
+      width: 50%;
+      color: #ff0000;
+      font-size: 2vw;
+      font-weight: 600;
+      font-family: monospace;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <div class="main">
+    <h2>Now, I want that this image of the both image tag should alternatively change on each second of time..</h2>
+    <img src="../images/x1.jpg" alt="x1" id="x1" />
+    <img src="../images/x2.jpg" alt="x2" id="x2" />  
+    <img src="../images/x3.jpg" alt="x3" id="x3" />
+    <img src="../images/x4.jpg" alt="x4" id="x4" />
+    <img src="../images/x5.jpg" alt="x5" id="x5" />
+    <img src="../images/x6.jpg" alt="x6" id="x6" />
+    <img src="../images/x7.jpg" alt="x7" id="x7" />
+    <img src="../images/x8.jpg" alt="x8" id="x8" />
+    <img src="../images/x9.jpg" alt="x9" id="x9" />
+    <img src="../images/x10.jpg" alt="x10" id="x10"/>   
+  </div>
+  <div class="btn-section">
+    <button class="swap-btn" onclick="swapBackwardDirection()">SWAP IMAGE B</button>
+    <button class="swap-btn" onclick="changeImage10()">SWAP IMAGE F</button>
+  </div>
+
+  <script>
+
+    // swap forward direction
+    function changeImage10() {
+        let x1 = document.getElementById('x1');
+        let x2 = document.getElementById('x2');
+        let x3 = document.getElementById('x3');
+        let x4 = document.getElementById('x4');
+        let x5 = document.getElementById('x5');
+        let x6 = document.getElementById('x6');
+        let x7 = document.getElementById('x7');
+        let x8 = document.getElementById('x8');
+        let x9 = document.getElementById('x9');
+        let x10 = document.getElementById('x10');
+
+        // there src
+        let x1Src = x1.src;
+        let x2Src = x2.src;
+        let x3Src = x3.src;
+        let x4Src = x4.src;
+        let x5Src = x5.src;
+        let x6Src = x6.src;
+        let x7Src = x7.src;
+        let x8Src = x8.src;
+        let x9Src = x9.src;
+        let x10Src = x10.src;
+
+        // set src
+        x1.src = x10Src;
+        x2.src = x1Src;
+        x3.src = x2Src;
+        x4.src = x3Src;
+        x5.src = x4Src;
+        x6.src = x5Src;
+        x7.src = x6Src;
+        x8.src = x7Src;
+        x9.src = x8Src;
+        x10.src = x9Src;
+      }
+
+
+      // swap back-ward direction
+      function swapBackwardDirection() {
+        let x1 = document.getElementById('x1');
+        let x2 = document.getElementById('x2');
+        let x3 = document.getElementById('x3');
+        let x4 = document.getElementById('x4');
+        let x5 = document.getElementById('x5');
+        let x6 = document.getElementById('x6');
+        let x7 = document.getElementById('x7');
+        let x8 = document.getElementById('x8');
+        let x9 = document.getElementById('x9');
+        let x10 = document.getElementById('x10');
+
+        // there src
+        let x1Src = x1.src;
+        let x2Src = x2.src;
+        let x3Src = x3.src;
+        let x4Src = x4.src;
+        let x5Src = x5.src;
+        let x6Src = x6.src;
+        let x7Src = x7.src;
+        let x8Src = x8.src;
+        let x9Src = x9.src;
+        let x10Src = x10.src;
+
+        // set src
+        x1.src = x2Src;
+        x2.src = x3Src;
+        x3.src = x4Src;
+        x4.src = x5Src;
+        x5.src = x6Src;
+        x6.src = x7Src;
+        x7.src = x8Src;
+        x8.src = x9Src;
+        x9.src = x10Src;
+        x10.src = x1Src;
+      }
+
+
+
+
+
+
+
+
+
+
+    
+    // set image alternatively
+    /*
+    function changeImagealternatively() {
+      let x1 = document.getElementById('x1');
+      let x2 = document.getElementById('x2');
+      let im1Src = x1.src;
+      let im2Src = x2.src;
+
+      // set src 
+      let x3 = x1.src = im2Src;
+      let x4 = x2.src = im1Src;
+    }
+    */
+    
+
+    // setInterval(changeImagealternatively, 1000);    // 1s --> 1000ms
+    // setInterval("changeImagealternatively()", 3000);    // 1s 1000ms -->
+
+
+
+  </script>
+  
+</body>
+</html>

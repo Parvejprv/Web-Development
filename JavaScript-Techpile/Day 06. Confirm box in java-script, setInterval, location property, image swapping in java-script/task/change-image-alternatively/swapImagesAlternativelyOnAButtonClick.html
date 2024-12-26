@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>change image alternatively</title>
+  <style>
+    .main {
+      height: 500px;
+      background-color: aliceblue;
+      text-align: center;
+      padding: 80px 0;
+    }
+
+    img {
+      height: 400px;
+      width: 600px;
+      border: 10px groove aqua;
+      padding: 10px;
+      border-radius: 10px;
+      margin-left: 20px;
+    }
+
+    .main h2 {
+      font-family:monospace;
+    }
+
+    .btn-section {
+      height: 4vw;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rebeccapurple;
+    }
+
+    .btn-section .btn {
+      height: 3vw;
+      width: 75%;
+      font-size: 1.54vw;
+      color: red;
+      border: 1px groove black;
+      font-family:monospace;
+    }
+
+    .btn-section .btn:hover {
+      background-color: rgb(27, 108, 179);
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="main">
+    <h2>Now, I want that this image of the both image tag should alternatively change on each second of time.. <br> But first time I need to start swpping of these text then it would runs auto by 1 second.</h2>
+    <img src="../images/x1.jpg" alt="x1" id="x1" />
+    <img src="../images/x2.jpg" alt="x2" id="x2" />    
+  </div>
+  <div class="btn-section">
+    <button class="btn" onclick="swapText()">SWAP TEXT</button>
+  </div>
+
+  <script>
+    
+    // set image alternatively
+    function changeImagealternatively() {
+      let x1 = document.getElementById('x1');
+      let x2 = document.getElementById('x2');
+      let im1Src = x1.src;
+      let im2Src = x2.src;
+
+      // set src 
+      let x3 = x1.src = im2Src;
+      let x4 = x2.src = im1Src;
+    }
+
+    // setInterval(changeImagealternatively, 1000);    // 1s --> 1000ms
+    function swapText() {
+      setInterval("changeImagealternatively()", 3000);    // 1s --> 1000ms
+    }
+
+
+  </script>
+  
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Show Hide Password 2</title>
+  <style>
+    .pass {
+      padding-left: 2vw;
+      height: 80px;
+      text-align: left;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      background-color: antiquewhite;
+    }
+    
+    .pass .password {
+      height: 35px;
+      width: 20%;
+      padding-left: 1vw;
+      letter-spacing: 3px;
+      text-align: start;
+      font-size: 1vw;
+    }
+    
+    .btn-section {
+      padding-left: 2vw;
+      height: 80px;
+      text-align: left;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: antiquewhite;
+    }
+
+    .btn-section .btn {
+      height: 2.1vw;
+      width: 14%;
+      padding-left: 1vw;
+      margin-left: 1vw;
+      letter-spacing: 3px;
+      text-align: start;
+      font-size: 1vw;
+      text-align: center;
+      font-weight: 500;
+    }
+
+    
+
+  </style>
+
+</head>
+<body>
+  
+<div class="pass">
+  <input class="password" type="password" name="password" id="password" placeholder="Enter your password" />
+</div>
+<div class="btn-section">
+  <button class="btn" id="show" onclick="showPassword()">SHOW</button>
+</div>
+
+
+
+  <script>
+    function showPassword() {
+      let showBtnObj = document.getElementById('show'); // showBtn obj
+      let showBtnVal = showBtnObj.innerText;
+      // console.log("showBtnVal : ", showBtnVal);
+
+      let passObj = document.getElementById('password');
+
+      if(passObj.type === 'password' && showBtnVal === 'SHOW') {
+        passObj.type = "text";
+        showBtnObj.innerText = "HIDE";
+        showBtnObj.style.backgroundColor = "red";
+        showBtnObj.style.color = "#fff";
+        showBtnObj.style.borderRadius = "5px";
+        
+      } else {
+        passObj.type = "password";
+        showBtnObj.innerText = "SHOW";
+        showBtnObj.style.backgroundColor = "green";
+        showBtnObj.style.color = "#fff";
+        showBtnObj.style.borderRadius = "5px";
+      } 
+    }
+    
+    /*
+    
+    function hidePassword() {
+      let showBtnObj = document.getElementById('show'); 
+      let hideBtnObj = document.getElementById('hide'); 
+      let passObj = document.getElementById('password');
+      // set object type to text
+      passObj.type = "password";
+
+      // hide the show button
+      showBtnObj.style.display = "block";
+      hideBtnObj.style.display = "none";
+    }
+    
+    */
+
+
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | Register</title>
+  <link rel="stylesheet" href="style.css">
+<body>
+  
+  <div id="outer">
+    <div id="header">
+      <div id="login-tab" class="box1">LOGIN</div>
+      <div id="register-tab" class="box2">REGISTER</div>
+    </div>
+
+    <!-- Login form -->
+    <div id="login" class="form-container">
+      <h2>Login</h2>
+      <div class="form-section">
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter email"/>
+      </div>
+      <div class="form-section">
+        <label for="password">Password</label>
+        <input type="password" placeholder="Enter password" />
+      </div>
+      <div class="form-section">
+        <label for="password">Confirm password</label>
+        <input type="password" placeholder="Confirm password"/>
+      </div>
+      <button id="login-btn">Login</button>
+    </div>
+    <!-- Login form ends! -->
+
+    <!-- Register -->
+     <div id="register" class="form-container">
+      <h2>Register</h2>
+      <div class="form-section">
+        <label for="name">Full Name</label>
+        <input type="text" placeholder="Enter full name"/>
+      </div>
+      <div class="form-section">
+        <label for="email">Email</label>
+        <input type="email" placeholder="Enter email"/>
+      </div>
+      <div class="form-section">
+        <label for="mobile">Mobile Number</label>
+        <input type="text" placeholder="Enter mobile number"/>
+      </div>
+      <div class="form-section">
+        <label for="dob">Date of Birth</label>
+        <input type="date" placeholder="DOB"/>
+      </div>
+      <div class="form-section">
+        <label for="password">Password</label>
+        <input type="text" placeholder="Enter password"/>
+      </div>
+      <div class="form-section">
+        <label for="password">Confirm password</label>
+        <input type="text" placeholder="Confirm password"/>
+      </div>
+      <button id="register-btn">Register</button>
+     </div>
+
+
+  </div>
+
+
+  <script>
+    const loginTab = document.getElementById('login-tab');
+    const registerTab = document.getElementById('register-tab');
+
+    const loginForm = document.getElementById('login');
+    const registerForm = document.getElementById('register');
+
+
+    loginTab.addEventListener('click', () => {
+      loginForm.style.display = "block";
+      registerForm.style.display = "none";
+      loginTab.style.backgroundColor = "white";
+      loginTab.style.color = "black";
+      registerTab.style.backgroundColor = "black";
+      registerTab.style.color = "white";
+    })
+
+    registerTab.addEventListener('click', () => {
+      registerForm.style.display = "block";
+      loginForm.style.display = "none";
+      registerTab.style.backgroundColor = "white";
+      registerTab.style.color = "black";
+      loginTab.style.backgroundColor = "black";
+      loginTab.style.color = "white";
+    })
+
+
+  </script>
+</body>
+</html>

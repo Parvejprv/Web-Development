@@ -1,0 +1,31 @@
+#box {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px 5px rgb(195, 195, 195);
+}
+
+.p {
+  color: white;
+  background-color: maroon;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 20px;
+  font-size: 2vw;
+}
+
+button {
+  background-color: blueviolet;
+  font-size: 2vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: white;
+  padding: 20px;
+  /* border-radius: 20px; */
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+

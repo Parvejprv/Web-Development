@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+</head>
+<body on>
+  
+  <h1>Welcome to the JavaScript!</h1>
+  <img onclick="demo()" src="../images/x7.jpg" alt="image1" height="400px" width="400px" />
+
+  <script>
+    let demo = () => {
+      let h = document.querySelector('h1');
+      console.log(h);
+      let im1 = document.querySelector('img');
+      console.log(im1);
+      im1.style.borderRadius = "20px";
+      im1.style.boxShadow = "5px 5px 10px 5px grey", "-5px -10px 10px 5px grey";
+
+      h.innerHTML = "<i>I am eager to learn JS deeply.</i>"
+      // h.innerText = "I am eager to learn JS deeply."
+      h.style.backgroundColor = "lightblue";
+      h.style.padding = "10px 20px";
+    }
+
+
+  </script>
+</body>
+</html>

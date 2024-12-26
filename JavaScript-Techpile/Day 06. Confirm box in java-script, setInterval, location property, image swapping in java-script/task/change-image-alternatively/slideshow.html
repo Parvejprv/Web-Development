@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>slideshow</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    .main {
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .content {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      background-color: aliceblue;
+    }
+
+    img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 1s;
+    }
+    img.active {
+      opacity: 1;
+    }
+
+    .btn-section {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 0;
+    }
+
+    .btn-section .swap-btn {
+      height: 4vw;
+      width: 15%;
+      color: #fff;
+      background-color: #007bff55;
+      border: none;
+      font-size: 1.5vw;
+      font-weight: 600; 
+      font-family: monospace;
+      cursor: pointer;
+    }
+
+    .btn-section .swap-btn:hover {
+      background-color: #0056b3;
+    }
+
+
+
+  </style>
+</head>
+
+<body>
+
+ <div class="main">
+  <div class="content">
+    <img src="../images/x1.jpg" alt="x1" id="x1" class="active">
+    <img src="../images/x2.jpg" alt="x2" id="x2">
+    <img src="../images/x3.jpg" alt="x3" id="x3">
+    <img src="../images/x4.jpg" alt="x4" id="x4">
+    <img src="../images/x5.jpg" alt="x5" id="x5">
+    <img src="../images/x6.jpg" alt="x6" id="x6">
+    <img src="../images/x7.jpg" alt="x7" id="x7">
+    <img src="../images/x8.jpg" alt="x8" id="x8">
+    <img src="../images/x9.jpg" alt="x9" id="x9">
+    <img src="../images/x10.jpg" alt="x10" id="x10">
+  </div>
+  <div class="btn-section">
+    <button class="swap-btn" onclick="previousImage()">Previous</button>
+    <button class="swap-btn" onclick="nextImage()">Next</button>
+  </div>
+  
+ </div>
+
+  
+
+
+  <script>
+    
+    let currentIndex = 0;
+      const images = document.querySelectorAll('.main img');
+      const totalImages = images.length;
+
+      console.log(totalImages);
+
+      function changeImage() {
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % totalImages;
+        images[currentIndex].classList.add('active');
+      }
+
+      function previousImage() {
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+        images[currentIndex].classList.add('active');
+      }
+
+      function nextImage() {
+        changeImage();
+      }
+
+
+    function swapAutoWithinInterval() {
+      changeImage();
+    }
+
+    setInterval(swapAutoWithinInterval, 5000);
+
+  </script>
+</body>
+
+</html>

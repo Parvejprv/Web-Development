@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swap the two text box value</title>
+  <style>
+    .outer {
+      height: 300px;
+      width: 100%;
+    }
+    .top {
+      height: 50%px;
+      width: 100%;
+      padding: 2vw 0vw;
+      text-align: center;
+    }
+    .bottom {
+      height: 50%;
+      width: 100%;
+      text-align: center;
+    }
+
+
+
+    .input-text {
+      color: rgb(0, 88, 117);
+      background-color: aliceblue;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      padding: .5vw;
+      font-size: 2vw;
+      margin: 10px 0px;
+    }
+  
+    button {
+      background-color: rgb(49, 203, 18);
+      font-size: 2vw;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: white;
+      padding: .5vw;
+    }
+  
+    button:hover {
+      background-color: white;
+      color: black;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="outer">
+    <div class="top">
+      <input class="input-text" type="text" name="val1" id="txt1" placeholder="Enter the first text" /> <br>
+      <input class="input-text" type="text" name="val2" id="txt2" placeholder="Enter the second text" /> <br>
+    </div>
+    <div class="bottom">
+      <button onclick="swapTextBoxValue()">SWAP</button>
+    </div>
+  </div>
+
+
+
+  <script>
+
+    function swapTextBoxValue() {
+      let t1 = document.getElementById('txt1');
+      let t2 = document.getElementById('txt2');
+      let txtBoxVal1 = t1.value;
+      let txtBoxVal2 = t2.value;
+
+      // set value | swap these both text box value
+      t1.value = txtBoxVal2;
+      t2.value = txtBoxVal1;
+    }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>change image alternatively</title>
+  <style>
+    .main {
+      height: 500px;
+      background-color: aliceblue;
+      text-align: center;
+      padding: 100px 0;
+    }
+
+    img {
+      height: 400px;
+      width: 600px;
+      border: 10px groove aqua;
+      padding: 10px;
+      border-radius: 10px;
+      margin-left: 20px;
+    }
+
+    .main h2 {
+      font-family:monospace;
+    }
+  </style>
+
+</head>
+<body>
+
+  <div class="main">
+    <h2>Now, I want that this image of the both image tag should alternatively change on each second of time..</h2>
+    <img src="../images/x1.jpg" alt="x1" id="x1" />
+    <img src="../images/x2.jpg" alt="x2" id="x2" />    
+  </div>
+
+  <script>
+    
+    // set image alternatively
+    function changeImagealternatively() {
+      let x1 = document.getElementById('x1');
+      let x2 = document.getElementById('x2');
+      let im1Src = x1.src;
+      let im2Src = x2.src;
+
+      // set src 
+      let x3 = x1.src = im2Src;
+      let x4 = x2.src = im1Src;
+    }
+
+    // setInterval(changeImagealternatively, 1000);    // 1s --> 1000ms
+    setInterval("changeImagealternatively()", 3000);    // 1s --> 1000ms
+
+
+  </script>
+  
+</body>
+</html>

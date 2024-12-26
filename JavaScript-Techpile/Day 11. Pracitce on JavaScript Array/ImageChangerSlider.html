@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Changer - SLIDER with border color change</title>
+<style>
+
+  .img-slider {
+    height: 640px;
+    width: 100%;
+    background-color: aliceblue;
+  }
+
+  img {
+    height: 600px;
+    width: 1000px;
+    border: 10px groove aqua;
+    border-radius: 10px;
+    padding: 10px;
+  }
+</style>
+
+</head>
+<body>
+
+  <center>
+    <h1>IMAGE CHANGER</h1>
+    <div class="img-slider">
+      <img src="../images/x6.jpg" alt="x6" class="img1" id="im1"/>
+    </div>
+  </center>
+
+
+
+
+  <script>
+    var arr = ["x1.jpg", "x2.jpg", "x3.jpg", "x4.jpg", "x5.jpg"];
+    var colors = ["red", "black", "blue", "purple", "yellow"];
+
+
+    var i = 0;
+    function slider() {
+
+        let img1Obj = document.querySelector("img");
+        let img1Src = img1Obj.src = "/images/"+arr[i];
+
+        img1Obj.style.border = "10px groove " + colors[i]
+
+        // console.log(img1Src);
+        i++;
+        if(i === arr.length) 
+        i = 0;
+    }
+
+    setInterval(slider, 2000);   // runs each time of each of the 2s
+
+
+
+  </script>
+</body>
+</html>

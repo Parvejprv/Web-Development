@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>location property in js</title>
+  <style>
+    div {
+      text-align: center;
+      color: #333;
+      font-size: 1.23vw;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: antiquewhite;
+    }
+
+    button {
+      font-size: 1.23vw;
+      margin-bottom: 1vw;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div>
+    <p>
+      Click the below given button to open the "Google" link.
+    </p>
+    <button onclick="google()" target="_blank">CLICK ME</button>
+  </div>
+
+  <div>
+    <p>
+      Click the below given button to open the "Instagram" link.
+    </p>
+    <button onclick="instagram()" target="_blank">CLICK ME</button>
+  </div>
+
+
+  <script>
+    function google() {
+      window.location = "https://www.google.com";
+    }
+    function instagram() {
+      window.location = "https://www.instagram.com";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login | signup</title>
+
+
+  <style>
+    
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: aliceblue;
+      font-family: 'Times New Roman', serif;
+    }
+
+    #outer {
+      min-height: 300px;
+      width: 300px;
+      padding: 20px;
+      margin: 100px auto;
+      border-radius: 10px;
+      background: linear-gradient(45deg, red, orange);
+      box-sizing: border-box;
+      box-shadow: 0px 4px 8px 0.2px rgba(0, 0, 0, 0.376);
+    }
+
+    #header {
+      height: 45px;
+      width: 100%;
+      color: #fff;
+      text-align: center;
+      font-weight: 500;
+      line-height: 45px;
+    }
+
+    #login-tab, #register-tab {
+      height: 45px;
+      width: 50%;   /* 150px */
+      float: left;
+      background-color: black;
+      cursor: pointer;
+    }
+
+    #login-tab {
+      border-radius: 10px 0px 0px 0px;
+    }
+
+    #register-tab {
+      border-radius: 0px 10px 0px 0px ;
+    }
+
+    #login-tab:hover, #register-tab:hover {
+      background-color: white;
+  color: black;
+    }
+
+    
+    h2  {
+      text-align: center;
+      margin: 10px;
+    }
+
+    .form-section {
+      width: 100%;
+      margin: 0px 0;
+      padding: 5px 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-section label {
+      margin-bottom: 5px;
+    }
+
+    .form-section input {
+      width: 100%;
+      padding: 14px;
+      border-radius: 5px;
+      background-color: rgb(255, 255, 255);
+      box-sizing: border-box;
+    }
+
+
+   #btn-section {
+     margin: 20px 0;
+     text-align: center;
+   }
+
+   
+   #login-btn {
+    height:40px;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+  }
+
+  #login-btn:hover {
+    background-color: #fff;
+    color: black;
+  }
+
+  #login {
+    display: block;
+  }
+
+  #register {
+    display: none;
+  }
+
+
+  </style>
+</head>
+<body>
+
+  <div id="outer" class="outer">
+    <div id="header" class="header">
+      <div id="login-tab" class="box">LOGIN</div>
+      <div id="register-tab" class="box">REGISTER</div>
+    </div>
+    <!-- login -->
+     <div id="login">
+      <h2>Login</h2>
+  
+        <div class="form-section">
+          <label>Email</label>
+          <input type="email" name="email" id="email" placeholder="Email" class="txt-box">
+        </div>
+        <div class="form-section">
+          <label>Password</label>
+          <input type="password" name="password" id="password1" placeholder="Enter password" class="txt-box">
+        </div>
+        <div class="form-section">
+          <label>Confirm password</label>
+          <input type="password" name="password" id="password1" placeholder="Confirm password" class="txt-box">
+        </div>
+      
+      <div id="btn-section">
+        <button id="login-btn">Login</button>
+      </div>
+     </div>
+
+     <!-- register -->
+     <div id="register">
+      <h2>Register</h2>
+      <div class="form-section">
+        <label for="">Full name</label>
+        <input type="text" name="name" id="name" placeholder="Enter full name">
+      </div>
+      <div class="form-section">
+        <label>Email</label>
+        <input type="email" name="email" id="email" placeholder="Email" class="txt-box">
+      </div>
+      <div class="form-section">
+        <label>Mobile Number</label>
+        <input type="text" name="mobile" id="mobile" placeholder="Enter mobile number">
+      </div>
+      <div class="form-section">
+        <label>Date of Birth</label>
+        <input type="date" name="dob" id="dob">
+      </div>
+      <div class="form-section">
+        <label>Password</label>
+        <input type="password" name="password" id="password1" placeholder="Enter password" class="txt-box">
+      </div>
+      <div class="form-section">
+        <label>Confirm password</label>
+        <input type="password" name="password" id="password1" placeholder="Confirm password" class="txt-box">
+      </div>
+      <div id="btn-section">
+        <button id="login-btn">Register</button>
+      </div>
+     </div>
+
+  </div>
+  
+
+  <script>
+    const loginTab = document.getElementById('login-tab');
+    const registerTab = document.getElementById('register-tab');
+
+    const loginForm = document.getElementById('login');
+    const registerForm = document.getElementById('register');
+
+
+    loginTab.addEventListener('click', () => {
+      loginForm.style.display = "block";
+      registerForm.style.display = "none";
+      loginTab.style.backgroundColor = "white";
+      loginTab.style.color = "black";
+      registerTab.style.backgroundColor = "black";
+      registerTab.style.color = "white";
+    })
+
+    registerTab.addEventListener('click', () => {
+      registerForm.style.display = "block";
+      loginForm.style.display = "none";
+      registerTab.style.backgroundColor = "white";
+      registerTab.style.color = "black";
+      loginTab.style.backgroundColor = "black";
+      loginTab.style.color = "white";
+    })
+
+
+  </script>
+</body>
+</html>
