@@ -1,0 +1,27 @@
+Practice task of javascript
+-----------------------------
+
+Date .../.../.....
+
+|--------|-----------------------------------
+| S. No. |  Programs
+|--------|-----------------------------------
+1. WAP in JS to exchange ten image on every two second and use a button to stop exchanging.
+2. WAP to exchange background color of 10 div on the gap of every 3 second.
+3. WAP in JS to show and hide an image on a button's click.
+4. WAP to create a stopwatch with hours:min:sec and increase seconds on every 1 second, increase minute on every 60 sec and increase hour on every 60 min.
+5. WAP to print square from 1 to given number in textbox. And print result in div.
+6. WAP to open once https://www.google.com/gmail wesite on a new window after 10 second.
+7. WAP to input total electricity unit consume by a customer and print total electricity bill with 7.0 Rs/unit charge.
+
+
+
+
+
+
+
+
+
+
+
+
