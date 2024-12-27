@@ -24,10 +24,92 @@ Feature of Functions i JavaScript:
 
 
 Types of Functions:
+----------------------
+There are two types of function,
+1). Built in function | Pre-defined function
+2). UDF | User define function
+
+
+1). Built in function | Pre-defined function:-
+===============================================
+The function which are pre defined in client (web browser) are known as Built in function.
+
+Example:-
+----------
+alert()
+write()
+prompt()
+print()
+setInterval()
+setTimeout()
+
+2). UDF | User define function:-
+================================
+A Function that is defined by the programmer is known as user defined funtiion.
+
+Syntax:
+
+funtion functionName () {
+  // statement 1
+  // statement 2
+  // statement .....
+}
+
+
+
+Arrow function:
+================
+Arrow function is introduced in ES6 (Ecma Script 6) standard, that is written as follows- 
+
+Syntax:
+
+datatype functionName = () => {
+  // statement 1
+  // statement 2
+  // statement 3
+  // statement ....
+}
+
+
+
+Question: 
+==========
+Let declare an array of String element and print each of the item of the array with the help of the for...of loop using arrow function.
+
+
+var fetchCollectionItems = () => {
+  let arr = new Array ("HTML", "CSS", "JS", "JQUERY", "BOOTSTRAP", "SQL");
+
+  for(let i of arr) {
+    document.write(i + "<br>");
+    // console.log(i + "\n");
+  }  
+}
+
+Note: here for...of loop gives the value of the collection
+
+
+var fetchCollectionItems1 = () => {
+  let arr = new Array ("HTML", "CSS", "JS", "JQUERY", "BOOTSTRAP", "SQL");
+
+  for(let i in arr) {
+    document.write(arr[i] + "<br>");
+    // console.log(arr[i] + "\n");
+  }  
+}
+
+Note: here for...in loop gives the index of the collection, but If I want to get the value or item then we need to use as given arr[i].
+
+
+
+
+
+//=================================================
 1. Function Declaration:
 A function declaration defines a named function. A declared function is "hoisted", meaning it can be called before it is defined.
 
-
+Example:
+---------
 function add(a, b) {
     return a + b;
 }
@@ -36,17 +118,21 @@ console.log(add(2, 3)); // Output: 5
 2. Function Expression:
 A function expression defines a function inside an expression instead of a separate statement. It can be anonymous (unnamed) or named. Function expressions are not hoisted.
 
-
+Example
+---------
 const subtract = function(a, b) {
     return a - b;
 };
 
 
-Write the function in JavaScript, definition and example and other features and type of function in JS, in details
-Functions in JavaScript
+Write the function in JavaScript, definition and example and other features and type of function in JS, in details?
+
+Functions in JavaScript:
+------------------------
 A function in JavaScript is a block of code designed to perform a particular task. A JavaScript function is executed when it is invoked (called).
 
 Definition:
+-----------
 A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().
 
 Example:
@@ -75,6 +161,25 @@ function add(x, y, z) {
 }
 
 add(3, 5, 6);
+
+
+Example 4. Write a function to add two number with parameterized function
+// Function with parameter
+
+function addition (x, y) {
+  console.log(x+y);
+}
+
+addition(10, 20);     // 30
+
+
+Example 5. Write a function to print the multiplication of three number
+function mult(p, q, r) {
+  console.log("Product of three number is = ", p*q*r);
+}
+
+mult(3, 5, 10);
+
 
 
 Features of Functions in JavaScript:
@@ -251,7 +356,6 @@ mult(10, 20, 30, 40, 50);    // 12000000
 
 
 */
-
 
 
 
