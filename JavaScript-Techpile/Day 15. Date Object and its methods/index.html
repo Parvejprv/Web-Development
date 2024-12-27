@@ -17,7 +17,7 @@
       background-color: aliceblue;
     }
     
-    .a {
+    .box-item {
       height: 250px;
       width: 250px;
       background-color: white;
@@ -31,12 +31,10 @@
       font-weight: bold;
       text-align: center;
       line-height: 200px;
-      box-shadow: 0px 4px 8px 10px black inset;
+      box-shadow: 0px 4px 8px 10px black inset;   /* h-shadow v-shadow blur-amount spread-amount inset|outset */
       font-family: 'digital-7';
     }
 
-
-    
     h1 {
       color: red;
       text-align: center;
@@ -69,11 +67,11 @@
 </head>
 <body>
   
+  <h1>DIGITAL CLOCK</h1>
   <div id="box">
-    <h1>DIGITAL CLOCK</h1>
-    <div id="h" class="a">00</div>
-    <div id="m" class="a">00</div>
-    <div id="s" class="a">00</div>
+    <div id="h" class="box-item">00</div>
+    <div id="m" class="box-item">00</div>
+    <div id="s" class="box-item">00</div>
     <div id="ampm" class="ampm">am|pm</div>
     
   </div>

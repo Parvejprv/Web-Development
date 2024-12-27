@@ -82,10 +82,15 @@ function updateTime() {
     ampm = "AM";
   }
 
-  var hourEle = document.getElementById('h');
-  var minuteEle = document.getElementById('m');
-  var secondEle = document.getElementById('s');
-  var ampmEle = document.getElementById('ampm');
+  // var hourEle = document.getElementById('h');
+  // var minuteEle = document.getElementById('m');
+  // var secondEle = document.getElementById('s');
+  // var ampmEle = document.getElementById('ampm');
+
+  var hourEle = document.querySelector("#h");
+  var minuteEle = document.querySelector("#m");
+  var secondEle = document.querySelector("#s");
+  var ampmEle = document.querySelector("#ampm");
 
   hourEle.innerText = String(hour).padStart(2, "0");
   minuteEle.innerText = minute;
