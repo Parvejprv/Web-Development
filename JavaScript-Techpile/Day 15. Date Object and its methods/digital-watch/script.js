@@ -1,22 +1,38 @@
 
 function updateTimeAndDate() {
-  const timeElement = document.getElementById('time');
+  // const timeElement = document.getElementById('time');
+
+  const hourEle = document.querySelector(".hour");
+  const minuteEle = document.querySelector(".minute");
+  const secondEle = document.querySelector(".second");
+  const ampmEle = document.querySelector(".ampm");
+
   const dateElement = document.getElementById('date');
 
   const now = new Date();
   // console.log(now)   // whole information about the current date and time
 
   let hours = now.getHours();
-
   // console.log(hours);
   // console.log(typeof(hours));    // Number
 
   const minutes = String(now.getMinutes()).padStart(2, "0");
   const seconds = String(now.getSeconds()).padStart(2, "0");
 
+
+
+  const hour = hourEle.innerText = hours;
+  const minute = minuteEle.innerText = minutes;
+  const second = secondEle.innerText = seconds;
+  
+  
+  
   // Determine AM or PM and convert hours to 12 hour format
   const ampm = hours >= 12 ? 'PM' : 'AM';
   hours = hours % 12 || 12;   // Convert 0 to 12 for midnight
+
+  // AM | PM format
+  const ampmFormat = ampmEle.innerText = ampm;
 
   const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   // console.log(days);
@@ -34,7 +50,7 @@ function updateTimeAndDate() {
 
 
 
-  timeElement.textContent = `${hours} : ${minutes} : ${seconds}  ${ampm}`;
+  // timeElement.textContent = `${hours} : ${minutes} : ${seconds}  ${ampm}`;
   dateElement.textContent = `${day}, ${month} ${date}, ${year}`;
 
 }
