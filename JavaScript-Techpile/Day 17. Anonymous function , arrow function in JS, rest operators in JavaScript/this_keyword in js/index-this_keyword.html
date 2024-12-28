@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>this keyword in java-script</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: antiquewhite;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .heading {
+      font-size: 18px;
+      color: blue;
+    }
+    .summary {
+      padding: 1vw;
+      background-color: azure;
+    }
+    h3 {
+      color: red;
+      padding: 1vw;
+    }
+    .calculator {
+      padding: 2vw;
+      background-color: blueviolet;
+    }
+    .calculator p {
+      color: aliceblue;
+      font-size: 18px;
+      margin-top: 2vw;
+    }
+    input[type="button"] {
+      padding: 2vw 2.5vw;
+      font-size: 3vw;
+      font-weight: bold;
+      background-color: rgb(251, 255, 0);
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <h1 class="heading">This keyword in Java-Script</h1>
+    <div class="summary">
+      <p>
+        this keyword in java-script is used to get the current object of the element.
+      </p>
+      <p>
+        Here is the following example related to this keyword-
+      </p>
+      <p>
+        <pre>
+
+        </pre>
+      </p>
+    </div>
+  </center>
+
+  <center>
+    <h3>Calculator - Simple calculator</h3>
+    <div class="calculator">
+      <input type="button" onclick="demo()" value="+">
+      <input type="button" onclick="demo()" value="*">
+      <input type="button" onclick="demo()" value="-">
+      <input type="button" onclick="demo()" value="/">
+      <p>
+        Note:-
+        - Here, if we didn't pass any parameter to the function then it gives the undefined value to from it.
+      </p>
+    </div>
+  </center>
+
+  <center>
+    <h3>Calculator - Simple calculator (When we pass a specific value to the function)</h3>
+    <div class="calculator">
+      <input type="button" onclick="demo(4)" value="+">
+      <input type="button" onclick="demo(1)" value="*">
+      <input type="button" onclick="demo(2)" value="-">
+      <input type="button" onclick="demo(3)" value="/">
+      <p>
+        Note:-
+        - Here, if we pass any parameter to the function then it gives the that value that is passed into that
+      </p>
+    </div>
+  </center>
+
+
+  <center>
+    <h3>Calculator - Simple calculator (when we pass this keyword to the function - this will get the object)</h3>
+    <div class="calculator">
+      <input type="button" onclick="demo(this)" value="+">
+      <input type="button" onclick="demo(this)" value="*">
+      <input type="button" onclick="demo(this)" value="-">
+      <input type="button" onclick="demo(this)" value="/">
+      <p>
+        Note:-
+        - Here, if we pass this keyword as parameter to the function then it gives the current object.
+      </p>
+    </div>
+  </center>
+
+
+  <center>
+    <h3>Calculator - Simple calculator (when we pass this keyword to the function - this will get the object-value)</h3>
+    <div class="calculator">
+      <input type="button" onclick="demo(this)" value="+">
+      <input type="button" onclick="demo(this)" value="*">
+      <input type="button" onclick="demo(this)" value="-">
+      <input type="button" onclick="demo(this)" value="/">
+      <p>
+        Note:-
+        - Here, if we pass 'this.value' keyword as parameter to the function then it gives the current object-value.
+      </p>
+    </div>
+  </center>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
