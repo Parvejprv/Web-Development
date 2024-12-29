@@ -5,8 +5,11 @@ function calculate(button) {
   console.log(button.value);
   // console.log(typeof(button.value));
 
-  let num1 = parseFloat(document.getElementById("num1").value);
-  let num2 = parseFloat(document.getElementById("num2").value);
+  // let num1 = parseFloat(document.getElementById("num1").value);
+  // let num2 = parseFloat(document.getElementById("num2").value);
+
+  let num1 = Number(document.querySelector("#num1").value);
+  let num2 = Number(document.querySelector("#num2").value);
   let result;
 
   if(isNaN(num1) || isNaN(num2)) {
