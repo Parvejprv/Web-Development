@@ -42,6 +42,6 @@ function calculate(button) {
     return;
   }
 
-  document.getElementById('result').innerText = result;
+  document.getElementById('result').innerText = result ;
 }
 
