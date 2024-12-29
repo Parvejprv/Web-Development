@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.image-gallary {
+  /* height: 500px; */
+  width: 100%;
+  /* background-color: red; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-gallary .title {
+  width: 100vw;
+  height: 100px;
+  background-color: green;
+  
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+.image-gallary .title h1{ 
+  margin: 0; 
+  text-align: center; color: white;
+}
+
+
+.outer-box {
+  width: 100%;
+  /* background-color: aqua; */
+  background: transparent;
+  padding: 2vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.outer-box .row {
+  width: 100%;
+  /* background-color: rebeccapurple; */
+  margin: 1em;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.outer-box .row .item-image {
+  height: 180px;
+  width: 150px;
+  padding: 8px;
+  object-fit: cover;
+
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px -4px 6px rgba(0, 0, 0, 0.1);
+}
+.outer-box .row .item-image:hover {
+  transition: all 0.3s ease;
+  transform: scale(1.1);
+  border: 2px groove rgba(255, 0, 0, 0.5);
+}
+
+/* Modal section */
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  min-height: 750px;
+  background: rgba(0, 0, 0, 0.4);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#modal-box {
+  width: 600px;
+  min-height: 300px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-top: 50px;
+  padding: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1), 0px -4px 6px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+.close-section  {
+  /* background-color: red; */
+  position: relative;
+
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+#modal-box .close-section .close {
+  background-color: red;
+  border-radius: 5px;
+  padding: 0px 10px;
+  position: relative;
+  right: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+#modal-box h2 {
+  padding-bottom: 24px;
+  color: #333;
+}
+#modal-box img {
+  width: 100%;
+  min-height: 300px;
+  min-height: 300px;
+  object-fit: cover;
+}

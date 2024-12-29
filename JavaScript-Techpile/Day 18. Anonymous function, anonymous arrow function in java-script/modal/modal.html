@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="modal.css">
+  <title>Modal Using Image Gallary</title>
+</head>
+<body>
+
+  <section class="image-gallary">
+    <div class="title">
+      <h1>Modal for Image Gallary</h1>
+    </div>
+    <div class="outer-box rows">
+      <div class="row">
+        <img class="item-image" onclick="onMouseClickModalImage(this)" src="../../images/x1.jpg" alt="x1 image">
+        <img class="item-image" onclick="onMouseClickModalImage(this)" src="../../images/x2.jpg" alt="x2 image">
+        <img class="item-image" onclick="onMouseClickModalImage(this)" src="../../images/x3.jpg" alt="x3 image">
+        <img class="item-image" onclick="onMouseClickModalImage(this)" src="../../images/x4.jpg" alt="x4 image">
+        <img class="item-image" onclick="onMouseClickModalImage(this)" src="../../images/x5.jpg" alt="x5 image">
+        <img class="item-image" onclick="onMouseClickModalImage(this)" src="../../images/x3.jpg" alt="x3 image">
+        <!-- <img class="item-image" onclick="onMouseClickModalImage(this)" src="../../images/x4.jpg" alt="x4 image">
+        <img class="item-image" onclick="onMouseClickModalImage(this)" src="../../images/x5.jpg" alt="x5 image"> -->
+      </div>
+      <div class="row">
+        <img class="item-image" onclick="onMouseClickModalImage(this)" src="../../images/x6.jpg" alt="x6 image">
+        <img class="item-image" onclick="onMouseClickModalImage(this)" src="../../images/x7.jpg" alt="x7 image">
+        <img class="item-image" onclick="onMouseClickModalImage(this)" src="../../images/x9.jpg" alt="x9 image">
+        <img class="item-image" onclick="onMouseClickModalImage(this)" src="../../images/x6.jpg" alt="x6 image">
+        <img class="item-image" onclick="onMouseClickModalImage(this)" src="../../images/x7.jpg" alt="x7 image">
+        <img class="item-image" onclick="onMouseClickModalImage(this)" src="../../images/x9.jpg" alt="x9 image">
+      </div>
+    </div>
+    <!-- Modal -->
+    <div id="modal">
+      <div id="modal-box">
+        <div class="close-section">
+          <span class="close" onclick="closeModal()">&times;</span>
+        </div>
+        <h2>Image</h2>
+        <img id="modal-image" src="../../images/x10.jpg" alt="modal image">
+      </div>
+    </div>
+      <!-- Modal ends! -->
+  </section>
+  
+  <script src="script-modal.js"></script>
+</body>
+</html>
