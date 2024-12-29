@@ -22,8 +22,8 @@ function calculate(button) {
     return;
   } 
 
+  
   let operation = button.value;   // button object value
-
 
   if (operation === "+") {
     result = num1 + num2;
