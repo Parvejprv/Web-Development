@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Sign up | Register</title>
+  <script>
+    function toggleModal(showLogin) {
+      const loginForm = document.querySelector('.login');
+      const registerForm = document.querySelector('.register');
+
+      if (showLogin) {
+        loginForm.style.display = 'block';
+        registerForm.style.display = 'none';
+      } else {
+        loginForm.style.display = 'none';
+        registerForm.style.display = 'block';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      toggleModal(true); // Show login form by default
+
+      document.getElementById('login-toggle').addEventListener('click', () => toggleModal(true));
+      document.getElementById('register-toggle').addEventListener('click', () => toggleModal(false));
+    });
+  </script>
+</head>
+<body>
+
+<div class="main">
+  <!-- Navbar -->
+  <div id="navigation-menu">
+    <div id="site-title">Site-Name</div>
+    <nav>
+      <ul id="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Review</a></li>
+        <li><a href="#" id="login-toggle">Log in</a></li>
+        <li><a href="#" id="register-toggle">Sign up</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- Navbar Ends!-->
+
+  <!-- Modal -->
+  <div class="signup">
+    <div class="modal">
+
+      <!-- login form section -->
+      <div class="login">
+        <div class="form-title">
+          <h2>Login</h2>
+        </div>
+        <form action="" method="get">
+          <label for="login-username">Username</label>
+          <input type="text" name="username" id="login-username" placeholder="Username" required>
+
+          <label for="login-password">Password</label>
+          <input type="password" name="password" id="login-password" placeholder="Enter your password" required>
+
+          <button type="submit">Log in</button>
+        </form>
+      </div>
+      <!-- login form section ends! -->
+
+      <!-- register form section -->
+      <div class="register">
+        <div class="form-title">
+          <h2>Register</h2>
+        </div>
+        <form action="" method="get">
+          <label for="register-username">Username</label>
+          <input type="text" name="username" id="register-username" placeholder="Username" required>
+
+          <label for="register-password">Password</label>
+          <input type="password" name="password" id="register-password" placeholder="Enter your password" required>
+
+          <label for="register-confirm-password">Confirm Password</label>
+          <input type="password" name="confirm-password" id="register-confirm-password" placeholder="Confirm password" required>
+
+          <button type="submit">Register</button>
+        </form>
+      </div>
+      <!-- register form section ends! -->
+
+    </div>
+  </div>
+  <!-- Modal Ends!-->
+
+</div>
+
+</body>
+</html>

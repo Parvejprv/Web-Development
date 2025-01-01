@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Sign up | Register</title>
+</head>
+<body>
+  
+  <!-- Navbar -->
+  <div id="navigation-menu">
+    <div id="site-title">C2C</div>
+    <nav>
+      <ul id="navbar">
+        <li class="item "><a href="#">Home</a></li>
+        <li class="item "><a href="#">Services</a></li>
+        <li class="item "><a href="#">Products</a></li>
+        <li class="item "><a href="#">About</a></li>
+        <li class="item "><a href="#">Review</a></li>
+        <li class="item login"><a href="#" id="login-toggle">Log in</a></li>
+        <li class="item login"><a href="#" id="register-toggle">Register</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!-- Navbar Ends!-->
+  
+  <div class="main">
+    
+  <div class="signup-register">
+    <!-- Modal -->
+    <div class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+
+      <!-- login form section -->
+      <div class="form-container" id="login-form">
+        <div class="form-title">
+          <h2>Login</h2>
+        </div>
+          <form action="" method="get">
+
+            <label for="login-username">Username</label>
+            <input type="text" name="username" id="login-username" placeholder="Username">
+
+            <label for="login-password">Password</label>
+            <input type="password" name="password" id="login-password" placeholder="Enter your password">
+
+            <button type="submit">Log in</button>
+          </form>
+          <div class="reg-btn">
+            <span>Don't have an account register here</span>
+            <button id="register-btn" type="submit">Register</button>
+          </div>
+      </div>
+      <!-- login form section ends! -->
+
+      <!-- register form section -->
+      <div class="form-container" id="register-form">
+        <div class="form-title">
+          <h2>Register</h2>
+        </div>
+          <form action="" method="get">
+            <label for="register-username">Username</label>
+            <input type="text" name="username" id="register-username" placeholder="Username or email or mobile" required>
+
+            <label for="password">Password</label>
+            <input type="password" name="password" id="register-password" placeholder="Enter your password">
+
+            <label for="register-confirm-password">Confirm Password</label>
+            <input type="password" name="confirm-password" id="register-confirm-password" placeholder="Confirm password">
+
+            <button type="submit">Register</button>
+          </form>
+          <div class="reg-btn">
+            <span>Already have an account Log-in here</span>
+            <button id="log-in-btn" type="submit">Log in</button>
+          </div>
+      </div>
+      <!-- register form section ends! -->
+
+    </div>
+    <!-- Modal Ends!-->
+  </div>
+
+
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
