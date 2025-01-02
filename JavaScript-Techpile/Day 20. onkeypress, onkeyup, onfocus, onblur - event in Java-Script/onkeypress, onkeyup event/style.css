@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+
+  font-family: "Glegoo" ,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.box {
+  height: 400px;
+  padding: 2vw;
+  background-color: aqua;
+}
+.box input {
+  width: 350px;
+  height: 30px;
+  padding: 10px;
+  font-family: "Glegoo", 'Times New Roman', Times, serif;
+}
+
+.box p {
+  margin-top: 50px;
+  background-color: red;
+  padding: 10px;
+
+}
+
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>event in Java-Script</title>
+</head>
+<body>
+  <!-- Keypress <br>
+  <input type="text" name="keypress" id="keypress" onkeypress="onKeyPressHandler()">
+  <p id="p1"></p>
+  Keyup <br>
+  <input type="text" name="keyup" id="keyup" onkeyup="onKeyUpHandler()">
+  <p id="p2"></p> -->
+
+
+  <div class="box">
+    Keypress <br>
+    <input type="text" name="keypress" id="keypress" onkeypress="keyPressHandler(this)"> <br>
+    Keyup <br>
+    <input type="text" name="keyup" id="keyup" onkeyup="keyPressHandler(this)">
+    <p id="p2"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
