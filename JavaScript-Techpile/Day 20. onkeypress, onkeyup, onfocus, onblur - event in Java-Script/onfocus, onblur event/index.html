@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>event in Java-Script | onFocus, onBlur event</title>
+</head>
+<body>
+  <!-- ONFOCUS <br>
+  <input type="text" name="keypress" id="keypress" onFocus="onFocusHandler()">
+  <p id="p1"></p>
+  ONBLUR <br>
+  <input type="text" name="keyup" id="keyup" onblur="onBlurHandler()">
+  <p id="p2"></p> -->
+
+
+  <div class="box">
+    ONFOCUS <br>
+    <input type="text" name="keypress" id="keypress" onfocus="onFocusBlurHandler(this)"> <br>
+    ONBLUR <br>
+    <input type="text" name="keyup" id="keyup" onblur="onFocusBlurHandler(this)">
+    <p id="p1"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
